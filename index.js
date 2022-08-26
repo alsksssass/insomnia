@@ -1,6 +1,6 @@
 // Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
-
+const { token } = require('./config.json');
 const wait = require('node:timers/promises').setTimeout;///딜레이 구문
 
 // Create a new client instance
@@ -463,4 +463,4 @@ client.on('interactionCreate', async interaction => {
 });
 
 // Login to Discord with your client's token
-client.login(process.env.token);
+client.login(token);
