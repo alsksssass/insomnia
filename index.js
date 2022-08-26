@@ -463,4 +463,4 @@ client.on('interactionCreate', async interaction => {
 });
 
 // Login to Discord with your client's token
-client.login(token);
+client.login('MTAwODM1Mjk4MDI3MTEyMDQxNA.Gi8HGJ.SwHmrL18amfPUGbY41Lb8yqo3YNyL746VsX72c');
