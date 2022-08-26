@@ -1,1 +1,1 @@
-worker: node app.js
+<woker>: <node index.js>
