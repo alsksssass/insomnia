@@ -165,7 +165,7 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
   } else if (commandName === '약한') {
     await interaction.reply({ files: ["https://i.imgur.com/1Bt7xpH.png"] });
-    const message = await interaction.channel.send('``문제집이 한 권 있다. 페이지가 접어져 있다.\n 박쑥떡꺼!!``');
+    const message = await interaction.channel.send('```문제집이 한 권 있다. 페이지가 접어져 있다.\n 박쑥떡꺼!!```');
     await message.react('❤️');
   } else if (commandName === '쪽지오픈') {
     const message = await interaction.reply({ content: 'https://i.imgur.com/lVtW2UT.png', fetchReply: true });
