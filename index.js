@@ -25,7 +25,7 @@ client.on('interactionCreate', async interaction => {
   const { commandName } = interaction;
 
   if (commandName === '개집벽') {
-    const message = await interaction.reply({ content: 'https://i.imgur.com/YFBFEEo.png', fetchReply: true });
+    const message = await interaction.reply({ content: 'https://imgur.com/undefined.png', fetchReply: true });
     message.react('❤️');
   } else if (commandName === '노란병') {
     await interaction.reply({ files: ["https://i.imgur.com/f3NJzdv.png"] });
@@ -105,7 +105,7 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
   } else if (commandName === '박사장') {
     await interaction.reply({ files: ["https://i.imgur.com/LrJWulu.jpg"] });
-    const message = await interaction.channel.send('```사장님이 나를 쳐다본다./n명패에 사장 박서함 이라고 쓰여있다.```');
+    const message = await interaction.channel.send('```사장님이 나를 쳐다본다.\n명패에 사장 박서함 이라고 쓰여있다.```');
     message.react('❤️');
   } else if (commandName === '영양제') {
     const message = await interaction.reply({ content: 'https://i.imgur.com/7gvfEXd.png', fetchReply: true });
@@ -126,7 +126,7 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.reply({ content: 'https://i.imgur.com/5BoeqCf.png', fetchReply: true });
     message.react('❤️');
     await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/5BoeqCf.png');
-    const message1 = await client.channels.cache.get('999886290008932433').send('```의자/n 어딘가에 사용할수 있지 않을까?```');
+    const message1 = await client.channels.cache.get('999886290008932433').send('```의자\n 어딘가에 사용할수 있지 않을까?```');
     await message1.react('❤️');
   } else if (commandName === '찢어진그림2') {
     const message = await interaction.reply({ content: 'https://i.imgur.com/T9Ui5jg.png', fetchReply: true });
@@ -135,7 +135,7 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.reply({ content: 'https://i.imgur.com/gocujxj.jpg', fetchReply: true });
     message.react('❤️');
     await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/gocujxj.jpg');
-    const message1 = await client.channels.cache.get('999886290008932433').send('```대걸레/n 어딘가에 사용할수 있지 않을까?```');
+    const message1 = await client.channels.cache.get('999886290008932433').send('```대걸레\n 어딘가에 사용할수 있지 않을까?```');
     await message1.react('❤️');
   } else if (commandName === '결말') {
     const message = await interaction.reply({ content: '나 때문에 죽은 줄 알았던 강아지 리먼이는 나 때문이 아니었다. 내가 리먼이에게 준 것은 강아지 영양제였다. 나는 추억memory을 얻었다. \n\n열여섯살의 나는 시기와 질투심에 쌓여 주변을 제대로 둘러보지 못 했지만 나도 누군가의 선망의 대상이었음을 알게 되었다. 나는 자존감ego을 얻었다.\n\n스무살, 나에게 심하게 집착하던 캐니가 두려워 나는 또 그러한 관계가 될까봐 누구도 만나지 못 하고 외출도 제대로 하지 못 했다. 하지만 나는 강력하게 대응했으며, 그녀가 그런 행동을 한 것은 내 탓이 아님을 깨달았다. 난 아무것도 잘못한게 없다. 난 돌파구break away를 찾았다.\n\n스물한 살, 나는 괴롭힘당하던 최후임을 모른 척 방관했지만, 진심어린 사과 후에 내가 남모르게 건넸던 작은 호의들이 후임이에게 의지가 되었다는 걸 알았다. 꼭 진실어린sincere 마음으로 제대로 사과해야지.\n\n스물여덟 살, 날 괴롭히고 억압한다고 생각했던 버니상사는 사실 날 위해 해주고 있는 일들도 많았다. 내가 극복overcome하고 용기를 내어 이야기하자 버니상사는 나의 이야기를 듣고 공감해주었다. 나는 이제 부당하게 당하는 일들에 대해 목소리 낼 수 있다.\n\n\n이제 내일이 오는 게 두렵지 않다.\n\n\n마음 속의 짐이 덜어지자 민성이는 편안하게 숙면에 빠져든다.\n\n\n민성아, 잘 자. \n https://i.imgur.com/Jgv2qy6.gif', fetchReply: true });
@@ -165,7 +165,7 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
   } else if (commandName === '약한') {
     await interaction.reply({ files: ["https://i.imgur.com/1Bt7xpH.png"] });
-    const message = await interaction.channel.send('```문제집이 한 권 있다. 페이지가 접어져 있다.\n 박쑥떡꺼!!```');
+    const message = await interaction.channel.send('```문제집이 한 권 있다. 페이지가 접어져 있다.\n박쑥떡꺼!!```');
     await message.react('❤️');
   } else if (commandName === '쪽지오픈') {
     const message = await interaction.reply({ content: 'https://i.imgur.com/lVtW2UT.png', fetchReply: true });
@@ -193,15 +193,15 @@ client.on('interactionCreate', async interaction => {
     await message4.react('❤️');
     const message5 = await client.channels.cache.get('1001495463792492635').send('https://imgur.com/M2hFlPV.png');////5
     await message5.react('❤️');
-    const message6 = await client.channels.cache.get('999907699070353469').send('```구일띠야, 네가 정말 리먼이를 죽인 게 맞는 거니?/n/n만약 아니라면, 리먼이는 대체 왜 죽은 거야?```');////6
+    const message6 = await client.channels.cache.get('999907699070353469').send('```구일띠야, 네가 정말 리먼이를 죽인 게 맞는 거니?\n\n만약 아니라면, 리먼이는 대체 왜 죽은 거야?```');////6
     await message6.react('❤️');
-    const message7 = await client.channels.cache.get('999907832734437439').send('```인비야, 너와 민수와 수영이와 진후는 서로 어떤 관계였다고 생각해?/n/n인섬니아에 와서 인비 너에 대한 생각이 바뀌었니? /n/n아직도 너는 아무 것도 못 하는 아이니?```');////7
+    const message7 = await client.channels.cache.get('999907832734437439').send('```인비야, 너와 민수와 수영이와 진후는 서로 어떤 관계였다고 생각해?\n\n인섬니아에 와서 인비 너에 대한 생각이 바뀌었니? \n\n아직도 너는 아무 것도 못 하는 아이니?```');////7
     await message7.react('❤️');
-    const message8 = await client.channels.cache.get('999907932697276456').send('```페어야, 너는 그래서 어떻게 이 상황에서 벗어 났어?/b/b그 방법이 옳았다고 생각해? 후회된 적은 없어?```');////8
+    const message8 = await client.channels.cache.get('999907932697276456').send('```페어야, 너는 그래서 어떻게 이 상황에서 벗어 났어?\n\n그 방법이 옳았다고 생각해? 후회된 적은 없어?```');////8
     await message8.react('❤️');
-    const message9 = await client.channels.cache.get('999908039874326578').send('```옹루케르야, 너는 그 때 무슨 일이 있었다고 생각해?/n/n그리고 너는 지금 무엇을 해야한다고 생각해?/n/n과거를 바꿀 수는 없어. 지금의 너는 무엇을 할 수 있을까?```');////9
+    const message9 = await client.channels.cache.get('999908039874326578').send('```옹루케르야, 너는 그 때 무슨 일이 있었다고 생각해?\n\n그리고 너는 지금 무엇을 해야한다고 생각해?\n\n과거를 바꿀 수는 없어. 지금의 너는 무엇을 할 수 있을까?```');////9
     await message9.react('❤️');
-    const message10 = await client.channels.cache.get('999908072879292477').send('```오프리숀, 회사에서 널 힘들 게 하는 게 뭐야?/n/n지금 그 상황을 어떻게 해결하고 싶어? ```');////10
+    const message10 = await client.channels.cache.get('999908072879292477').send('```오프리숀, 회사에서 널 힘들 게 하는 게 뭐야?\n\n지금 그 상황을 어떻게 해결하고 싶어? ```');////10
     await message10.react('❤️');
   } else if (interaction.commandName === '올청소') {
     await interaction.reply('삭제(Max500)');
