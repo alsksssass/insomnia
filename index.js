@@ -163,8 +163,8 @@ client.on('interactionCreate', async interaction => {
     await interaction.channel.send('||면||');
     await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```');
     const message = interaction.channel.send({ files: ["https://i.imgur.com/3DuhauC.gif"] });
-    message.react('❤️');}
-    else if (commandName === '페어') {
+    message.react('❤️');
+  } else if (commandName === '페어') {
     await interaction.reply({ content: '```안녕하세요. 저는 스무살 페어입니다. \n\n제가 어떻게 이 상황에서 벗어 났냐고요? 달력을 보시면 아시겠지만 결국 7월 24일에 급하게 방을 빼고 다른 곳으로 이사를 할 수 밖에 없었답니다… 당연히 전화번호도 바꾸고, 메신저도 탈퇴했어요.\n\n제 애인, 아니, 전 애인은 전혀 말이 통하는 상대가 아니었어요. 아무리 그만하라고, 그냥 친구로 지내자고 해도 제 의견을 끝까지 전혀 존중하지 않았을 거예요…\n\n때로는… 그저 회피하고 도망가야할 때도 있는 것 같아요.\n\n제 자신한테 하고 싶은 말요?\n\n글쎄요.\n\n네 잘못이 아니다. 라고 해주고 싶어요. 이렇게 될 줄, 그런 사람인 줄 제가 어떻게 알 수 있었겠어요?\n\n너무 두려워서 다시는 아무도 만나고 싶지 않고, 다시는 누구도 믿을 수 없을 것 같지만…\n그래도 시간이 지나면… 저를 좋아하면서도 존중해주는 사람과 새로운 사랑을 시작할 수 있겠죠?```\n\n', fetchReply: true });
    await interaction.channel.send('\n\n```당신의 진짜 이름은 break away 입니다. fear두려움에서 잘 도망치셨기 때문에 진짜 이름을 찾으셨습니다.``` \n\n')};
    await interaction.channel.send('\n\n```당신은...``` \n');
@@ -176,8 +176,8 @@ client.on('interactionCreate', async interaction => {
    await interaction.reply({ content: '```저는 스물한살, 옹루케르입니다. \n\n사실 저는 박선임이 최후임을 괴롭히고 있다는 걸 알고 있었어요.\n\n하지만 괜히 아는 척 했다가 그 괴롭힘의 화살이 저에게로 향할까봐 방관했습니다.\n\n제가 할 수 있는 거라고는 그냥 제가 가지고 있던 가나파이 몇 개를 최후임 관물대에 몰래 넣어놓는 거 뿐이었죠.\n\n\n이제라도 저는 용기를 내어 최후임에게 사과하고 싶어요.\n\n앞으로는 불의를 보았을 때, 방관자가 되고 싶지 않네요.\n\n\n진심어린 사과를 한다면 최후임도 제 마음을 알아줄까요?```\n\n', fetchReply: true });
     await interaction.channel.send('\n\n```당신의 진짜 이름은 sincere 입니다. onlooker 방관자에서 벗어나셨기 때문에 진짜 이름을 찾으셨습니다.``` \n\n');
     await interaction.channel.send('\n\n```당신은...``` \n');
-    await interaction.channel.send('||녕||')
-    await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
+    await interaction.channel.send('||녕||');
+    await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```');
     const message = interaction.channel.send({ files: ["https://i.imgur.com/lAqxsGO.gif"] });
     message.react('❤️');
   } else if (commandName === '오프리숀') {
