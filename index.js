@@ -448,7 +448,6 @@ client.on('interactionCreate', async interaction => {
     ///오프리숀
   } else if (commandName === '청소') {
     const number = interaction.options.getNumber('num');
-    await wait(3000)
     console.log(number)
     await interaction.reply(number + tkrwpehla);
     await interaction.channel.bulkDelete(number)
