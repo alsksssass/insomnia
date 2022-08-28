@@ -447,8 +447,7 @@ client.on('interactionCreate', async interaction => {
       .catch(console.error);
     ///오프리숀
   } else if (commandName === '청소') {
-    const number = interaction.options.getNumber('num');
-    console.log(number)
+    const number = interaction.options.getNumber('숫자');
     await interaction.reply(number + tkrwpehla);
     await interaction.channel.bulkDelete(number)
       .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
