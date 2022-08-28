@@ -25,7 +25,7 @@ client.on('interactionCreate', async interaction => {
   const { commandName } = interaction;
 
   if (commandName === '개집벽') {
-    const message = await interaction.reply({ content: 'https://imgur.com/undefined.png', fetchReply: true });
+    const message = await interaction.reply({ content: 'https://i.imgur.com/ZhPmtAD.jpg', fetchReply: true });
     message.react('❤️');
   } else if (commandName === '노란병') {
     await interaction.reply({ files: ["https://i.imgur.com/f3NJzdv.png"] });
@@ -183,15 +183,15 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.reply('https://imgur.com/vckv6vH.png');
     await message.react('❤️');
   } else if (commandName === '셋팅') {
-    const message1 = await client.channels.cache.get('1001494798512947320').send('https://imgur.com/rE7As8z.png');///1
+    const message1 = await client.channels.cache.get('1001494798512947320').send({ files: ["https://imgur.com/rE7As8z.png"] });///1
     await message1.react('❤️');
-    const message2 = await client.channels.cache.get('1001494976041058375').send('https://imgur.com/cgncqeW.png');////2
+    const message2 = await client.channels.cache.get('1001494976041058375').send({ files: ["https://imgur.com/cgncqeW.png"] });////2
     await message2.react('❤️');
-    const message3 = await client.channels.cache.get('1001495326068314152').send('https://imgur.com/HArmw9D.png');////3
+    const message3 = await client.channels.cache.get('1001495326068314152').send({ files: ["https://imgur.com/HArmw9D.png"] });////3
     await message3.react('❤️');
-    const message4 = await client.channels.cache.get('1001495384092332162').send('https://imgur.com/okSK7QF.png');////4
+    const message4 = await client.channels.cache.get('1001495384092332162').send({ files: ["https://imgur.com/okSK7QF.png"] });////4
     await message4.react('❤️');
-    const message5 = await client.channels.cache.get('1001495463792492635').send('https://imgur.com/M2hFlPV.png');////5
+    const message5 = await client.channels.cache.get('1001495463792492635').send({ files: ["https://imgur.com/M2hFlPV.png"] });////5
     await message5.react('❤️');
     const message6 = await client.channels.cache.get('999907699070353469').send('```구일띠야, 네가 정말 리먼이를 죽인 게 맞는 거니?\n\n만약 아니라면, 리먼이는 대체 왜 죽은 거야?```');////6
     await message6.react('❤️');
