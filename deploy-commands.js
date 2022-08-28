@@ -1,6 +1,6 @@
 const { SlashCommandBuilder, Routes } = require('discord.js');
 const { REST } = require('@discordjs/rest');
-const { clientId, guildId } = require('./config1.json');
+const { clientId, guildId } = require('./config.json');
 
 const commands = [
   new SlashCommandBuilder().setName('개집벽').setDescription('구일띠 방의 개집벽 그림'),
