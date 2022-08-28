@@ -46,7 +46,7 @@ const commands = [
   new SlashCommandBuilder().setName('이력서').setDescription('오프리숀 이력서'),
   new SlashCommandBuilder().setName('셋팅').setDescription('12345번방 첫사진 게제'),
   new SlashCommandBuilder().setName('올청소').setDescription('모든방 청소 500개 한정'),
-  new SlashCommandBuilder().setName('청소').setDescription('현재채널 99개 메시지 삭제'),
+  new SlashCommandBuilder().setName('청소').setDescription('청소갯수').addNumberOption(option => option.setName('숫자').setDescription('최대 99개')),
   new SlashCommandBuilder().setName('진엔딩').setDescription('일러스트by 다올.'),
   new SlashCommandBuilder().setName('노멀엔딩').setDescription('일러스트by 다올.'),
 ]
