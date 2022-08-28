@@ -1,7 +1,9 @@
 // Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
 const wait = require('node:timers/promises').setTimeout;///딜레이 구문
-
+///추가문
+const tkrwpehla = "개 삭제됨"
+///
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions] });
 
@@ -445,9 +447,11 @@ client.on('interactionCreate', async interaction => {
       .catch(console.error);
     ///오프리숀
   } else if (commandName === '청소') {
-    await interaction.reply('삭제(Max99)');
-    wait(1000)
-    await interaction.channel.bulkDelete(99)
+    const number = interaction.options.getNumber('num');
+    await wait(3000)
+    console.log(number)
+    await interaction.reply(number + tkrwpehla);
+    await interaction.channel.bulkDelete(number)
       .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
       .catch(console.error);
   } else if (commandName === '진엔딩') {
