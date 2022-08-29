@@ -50,6 +50,7 @@ const commands = [
   new SlashCommandBuilder().setName('진엔딩').setDescription('일러스트by 다올.'),
   new SlashCommandBuilder().setName('노멀엔딩').setDescription('일러스트by 다올.'),
   new SlashCommandBuilder().setName('허사장').setDescription('허경영사장'),
+  new SlashCommandBuilder().setName('평가표').setDescription('평가표'),
 ]
   .map(command => command.toJSON());
 
