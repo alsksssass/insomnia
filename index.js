@@ -239,7 +239,7 @@ client.on('interactionCreate', async interaction => {
     const message4 = await client.channels.cache.get('1001495384092332162').send({ files: ["https://imgur.com/okSK7QF.png"] });////4
     await message4.react('❤️');
     await client.channels.cache.get('1001495463792492635').send({ files: ["https://imgur.com/M2hFlPV.png"] });////5
-    const message5 = await interaction.channel.send('```작은 사무실 구석에 사장실이 보인다.```')
+    const message5 = client.channels.cache.get('1001495463792492635').send('```작은 사무실 구석에 사장실이 보인다.```')
     await message5.react('❤️');
     const message6 = await client.channels.cache.get('999907699070353469').send('```구일띠야, 네가 정말 리먼이를 죽인 게 맞는 거니?\n\n만약 아니라면, 리먼이는 대체 왜 죽은 거야?```');////6
     await message6.react('❤️');
