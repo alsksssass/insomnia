@@ -49,6 +49,7 @@ const commands = [
   new SlashCommandBuilder().setName('청소').setDescription('청소갯수').addNumberOption(option => option.setName('숫자').setDescription('최대 99개')),
   new SlashCommandBuilder().setName('진엔딩').setDescription('일러스트by 다올.'),
   new SlashCommandBuilder().setName('노멀엔딩').setDescription('일러스트by 다올.'),
+  new SlashCommandBuilder().setName('허사장').setDescription('허경영사장'),
 ]
   .map(command => command.toJSON());
 
