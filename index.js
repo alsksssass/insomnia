@@ -211,7 +211,8 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.channel.send({ files: ["https://i.imgur.com/wVWUCwO.gif"] });
     message.react('❤️');
   } else if (commandName === '약한') {
-    const message = await interaction.reply({ files: ["https://i.imgur.com/1Bt7xpH.png"] });
+    interaction.reply({ files: ["https://i.imgur.com/1Bt7xpH.png"] });
+    const message = await interaction.channel.send('```문제집이 한 권 있다. 페이지가 접어져 있다. 표지 – YAKHAN 수학 1-1 (박쑥떡 꺼!!)```')
     await message.react('❤️');
   } else if (commandName === '쪽지오픈') {
     const message = await interaction.reply({ content: 'https://i.imgur.com/lVtW2UT.png', fetchReply: true });
@@ -237,7 +238,8 @@ client.on('interactionCreate', async interaction => {
     await message3.react('❤️');
     const message4 = await client.channels.cache.get('1001495384092332162').send({ files: ["https://imgur.com/okSK7QF.png"] });////4
     await message4.react('❤️');
-    const message5 = await client.channels.cache.get('1001495463792492635').send({ files: ["https://imgur.com/M2hFlPV.png"] });////5
+    await client.channels.cache.get('1001495463792492635').send({ files: ["https://imgur.com/M2hFlPV.png"] });////5
+    const message5 = await interaction.channel.send('```작은 사무실 구석에 사장실이 보인다.```')
     await message5.react('❤️');
     const message6 = await client.channels.cache.get('999907699070353469').send('```구일띠야, 네가 정말 리먼이를 죽인 게 맞는 거니?\n\n만약 아니라면, 리먼이는 대체 왜 죽은 거야?```');////6
     await message6.react('❤️');
@@ -463,9 +465,9 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply({ files: ["https://i.imgur.com/LrTtNF1.jpg"] });
     const message = await interaction.channel.send('```사장님이 나를 쳐다본다.\n명패에 사장 허경영 이라고 쓰여있다.```');
     message.react('❤️');
-  } else if (commandName === '야') {
-    const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
-    message.react('👍');
+  } else if (commandName === '평가표') {
+    const message = await interaction.reply({ files: ["https://i.imgur.com/N6Atf8d.png"] });
+    message.react('❤️');
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
