@@ -466,7 +466,7 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.channel.send('```사장님이 나를 쳐다본다.\n명패에 사장 허경영 이라고 쓰여있다.```');
     message.react('❤️');
   } else if (commandName === '평가표') {
-    const message = await interaction.reply({ files: ["https://i.imgur.com/N6Atf8d.png"] });
+    const message = await interaction.reply({ content: 'https://i.imgur.com/N6Atf8d.png', fetchReply: true });
     message.react('❤️');
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
