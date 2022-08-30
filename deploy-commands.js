@@ -34,11 +34,21 @@ const commands = [
   new SlashCommandBuilder().setName('결말').setDescription('진엔딩'),
   new SlashCommandBuilder().setName('결말2').setDescription('진실패엔딩'),
   new SlashCommandBuilder().setName('결말3').setDescription('어중간 성공'),
-  new SlashCommandBuilder().setName('구일띠').setDescription('구일띠 결말'),
-  new SlashCommandBuilder().setName('인비').setDescription('인비 결말'),
-  new SlashCommandBuilder().setName('페어').setDescription('페어 결말'),
-  new SlashCommandBuilder().setName('옹루케르').setDescription('옹루케르 결말'),
-  new SlashCommandBuilder().setName('오프리숀').setDescription('오프리숀 결말'),
+  new SlashCommandBuilder().setName('구일띠1').setDescription('구일띠 결말'),
+  new SlashCommandBuilder().setName('구일띠2').setDescription('구일띠 결말'),
+  new SlashCommandBuilder().setName('구일띠3').setDescription('구일띠 결말'),
+  new SlashCommandBuilder().setName('인비1').setDescription('인비 결말'),
+  new SlashCommandBuilder().setName('인비2').setDescription('인비 결말'),
+  new SlashCommandBuilder().setName('인비3').setDescription('인비 결말'),
+  new SlashCommandBuilder().setName('페어1').setDescription('페어 결말'),
+  new SlashCommandBuilder().setName('페어2').setDescription('페어 결말'),
+  new SlashCommandBuilder().setName('페어3').setDescription('페어 결말'),
+  new SlashCommandBuilder().setName('옹루케르1').setDescription('옹루케르 결말'),
+  new SlashCommandBuilder().setName('옹루케르2').setDescription('옹루케르 결말'),
+  new SlashCommandBuilder().setName('옹루케르3').setDescription('옹루케르 결말'),
+  new SlashCommandBuilder().setName('오프리숀1').setDescription('오프리숀 결말'),
+  new SlashCommandBuilder().setName('오프리숀2').setDescription('오프리숀 결말'),
+  new SlashCommandBuilder().setName('오프리숀3').setDescription('오프리숀 결말'),
   new SlashCommandBuilder().setName('약한').setDescription('인비방 약한수학 문제집'),
   new SlashCommandBuilder().setName('쪽지오픈').setDescription('페어방 인비쪽지 열림'),
   new SlashCommandBuilder().setName('캘린더').setDescription('페어방 캘린더1,2,3'),
@@ -51,6 +61,8 @@ const commands = [
   new SlashCommandBuilder().setName('노멀엔딩').setDescription('일러스트by 다올.'),
   new SlashCommandBuilder().setName('허사장').setDescription('허경영사장'),
   new SlashCommandBuilder().setName('평가표').setDescription('평가표'),
+  new SlashCommandBuilder().setName('Dr.오').setDescription('진행자말').addStringOption(option => option.setName('진행말').setDescription('메시지넣기'))
+  
 ]
   .map(command => command.toJSON());
 
