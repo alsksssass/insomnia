@@ -465,7 +465,7 @@ client.on('interactionCreate', async interaction => {
   } else if (commandName === '발달표') {
     const message = await interaction.reply({ content: 'https://i.imgur.com/N6Atf8d.png', fetchReply: true });
     message.react('❤️');
-  } if (commandName === 'Dr오') {
+  } if (commandName === '오박사') {
     const string = interaction.options.getString('진행말');
     const message = await interaction.reply({ content: ekdha+string+ekdha, fetchReply: true })
     message.react('❤️');
