@@ -61,7 +61,7 @@ const commands = [
   new SlashCommandBuilder().setName('노멀엔딩').setDescription('일러스트by 다올.'),
   new SlashCommandBuilder().setName('허사장').setDescription('허경영사장'),
   new SlashCommandBuilder().setName('평가표').setDescription('평가표'),
-  new SlashCommandBuilder().setName('Dr.오').setDescription('진행자말').addStringOption(option => option.setName('진행말').setDescription('메시지넣기'))
+  new SlashCommandBuilder().setName('Dr오').setDescription('진행자말').addStringOption(option => option.setName('진행말').setDescription('메시지넣기'))
   
 ]
   .map(command => command.toJSON());
