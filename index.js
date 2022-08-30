@@ -155,55 +155,55 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply({ content: '```저는 아홉살, 구일띠입니다. \n\n제가 좋아하는 강아지 리먼이 있죠? \n\n리먼이 진짜 진짜 귀엽지 않나요?\n\n\n근데 여러분 그거 아셨어요? 강아지들의 시간은 인간들의 시간보다 더 빨리 흐른다는 거…\n\n저는 리먼이가 저랑 동갑 친구인줄 알았거든요?\n\n그런데 사람 나이로 아홉살이면 강아지 나이로는… 할아버지래요ㅠㅠ\n\n\n그것도 모르고 저는 제가 독약같은 걸 리먼이에게 줘서 리먼이가 죽은줄만 알았어요.\n하지만 알고보니 그건 그냥 강아지에게 좋은 영양제였어요.\n\n제가 리먼이를 죽인게 아니었어요!\n\n\n리먼이가 무지개다리를 건넌 건 너무너무 슬프지만, 그래도 어쩔 수 없는 거겠죠?\n\n이젠 리먼이와의 행복했던 시간만을 기억할래요!\n\n\n언젠간 다시 만날 그 날을 기다릴게, 리먼아 사랑해!```\n\n \n\n', fetchReply: true });
   } else if (commandName === '구일띠2') {
     await interaction.channel.send('\n\n```당신의 진짜 이름은 memory 입니다. \n\n guilty죄책감으로 얼룩진 과거를 바로잡고 리먼이와의 추억을 되찾으셨기 때문에 진짜 이름을 찾으셨습니다.``` \n\n')
+    await interaction.channel.send({ files: ["https://i.imgur.com/hoXsMBF.gif"] });
   } else if (commandName === '구일띠3') {
     await interaction.channel.send('\n\n```당신은...``` \n')
     await interaction.channel.send('||증||')
-    await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
-    const message = await interaction.channel.send({ files: ["https://i.imgur.com/hoXsMBF.gif"] });
+    const message = await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
     message.react('❤️');
   } else if (commandName === '인비1') {
     await interaction.reply({ content: '```저는 16살, 인비입니다. \n\n저는 제가 잘 하는 게 하나도 없다고 생각했어요.\n\n축구도 잘 하고 친구들한테 인기도 많은 민수가 늘 부러웠죠.\n아마 제가 처음 질투라는 감정을 느껴본 친구가 아니었나 싶어요.\n\n그런데 민수는 공부를 잘 하는 수영이를 부러워했고,\n\n그 수영이는 항상 행복하게 지내던 진후를 부러워했고,\n\n진후는 그림을 잘 그리는 저를 부러워했지 뭐에요?\n\n\n전 이제 알아요.\n\n사람들은 다 각자 잘 하는 게 다르고, 좋아하는 게 다르다는 거.\n\n그리고 나에게 없는 것을 부러워하기만 하기보다 내가 가진 장점을 소중히 여겨야한다는거.\n\n\n나는 이제 자존감을 얻었어요. 여러분들도 자신의 장점을 찾아보고 나를 소중히 여길 수 있게 되길 바라요.```\n\n', fetchReply: true });
   } else if (commandName === '인비2') {
     await interaction.channel.send('\n\n```\n\n당신의 진짜 이름은 ego입니다. 질투envy를 억누르고 ego 자존감을 얻으셨기 때문에 진짜 이름을 찾으셨습니다.``` \n\n')
-   } else if (commandName === '인비3') {
+   await interaction.channel.send({ files: ["https://i.imgur.com/3DuhauC.gif"] });
+  } else if (commandName === '인비3') {
     await interaction.channel.send('\n\n```당신은...``` \n')
     await interaction.channel.send('||면||')
-    await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
-    const message = await interaction.channel.send({ files: ["https://i.imgur.com/3DuhauC.gif"] });
+    const message = await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
     message.react('❤️');
   } else if (commandName === '페어1') {
     await interaction.reply({ content: '```안녕하세요. 저는 스무살 페어입니다. \n\n제가 어떻게 이 상황에서 벗어 났냐고요? 달력을 보시면 아시겠지만 결국 7월 24일에 급하게 방을 빼고 다른 곳으로 이사를 할 수 밖에 없었답니다… 당연히 전화번호도 바꾸고, 메신저도 탈퇴했어요.\n\n제 애인, 아니, 전 애인은 전혀 말이 통하는 상대가 아니었어요. 아무리 그만하라고, 그냥 친구로 지내자고 해도 제 의견을 끝까지 전혀 존중하지 않았을 거예요…\n\n때로는… 그저 회피하고 도망가야할 때도 있는 것 같아요.\n\n제 자신한테 하고 싶은 말요?\n\n글쎄요.\n\n네 잘못이 아니다. 라고 해주고 싶어요. 이렇게 될 줄, 그런 사람인 줄 제가 어떻게 알 수 있었겠어요?\n\n너무 두려워서 다시는 아무도 만나고 싶지 않고, 다시는 누구도 믿을 수 없을 것 같지만…\n그래도 시간이 지나면… 저를 좋아하면서도 존중해주는 사람과 새로운 사랑을 시작할 수 있겠죠?```\n\n', fetchReply: true });
   }
     else if (commandName === '페어2') {
     await interaction.channel.send('\n\n```당신의 진짜 이름은 break away 입니다. fear두려움에서 잘 도망치셨기 때문에 진짜 이름을 찾으셨습니다.``` \n\n')
-   }
+   await interaction.channel.send({ files: ["https://i.imgur.com/ukXkrfF.gif"] });
+    }
     else if (commandName === '페어3') {
     await interaction.channel.send('\n\n```당신은...``` \n')
     await interaction.channel.send('||불||')
-    await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
-    const message = await interaction.channel.send({ files: ["https://i.imgur.com/ukXkrfF.gif"] });
+    const message = await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
     message.react('❤️');
   } else if (commandName === '옹루케르1') {
    await interaction.reply({ content: '```저는 스물한살, 옹루케르입니다. \n\n사실 저는 박선임이 최후임을 괴롭히고 있다는 걸 알고 있었어요.\n\n하지만 괜히 아는 척 했다가 그 괴롭힘의 화살이 저에게로 향할까봐 방관했습니다.\n\n제가 할 수 있는 거라고는 그냥 제가 가지고 있던 가나파이 몇 개를 최후임 관물대에 몰래 넣어놓는 거 뿐이었죠.\n\n\n이제라도 저는 용기를 내어 최후임에게 사과하고 싶어요.\n\n앞으로는 불의를 보았을 때, 방관자가 되고 싶지 않네요.\n\n\n진심어린 사과를 한다면 최후임도 제 마음을 알아줄까요?```\n\n', fetchReply: true });
   } 
     else if (commandName === '옹루케르2') {
      await interaction.channel.send('\n\n```당신의 진짜 이름은 sincere 입니다. onlooker 방관자에서 벗어나셨기 때문에 진짜 이름을 찾으셨습니다.``` \n\n')
+    await interaction.channel.send({ files: ["https://i.imgur.com/lAqxsGO.gif"] });
     }
      else if (commandName === '옹루케르3') {
     await interaction.channel.send('\n\n```당신은...``` \n')
     await interaction.channel.send('||녕||')
-    await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
-   const message = await interaction.channel.send({ files: ["https://i.imgur.com/lAqxsGO.gif"] });
+   const message = await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
     message.react('❤️');
   } else if (commandName === '오프리숀1') {
   await interaction.reply({ content: '```저는 스물여덟살, 오프리숀입니다. \n\n전 제 직속상사 버니님이 저를 이유없이 싫어하고 미워하고 괴롭히고 있다고 생각했어요.\n\n하지만 제 연봉을 올려주려고 힘써준 게 버니님이었다는 걸 알았어요.\n\n\n지금도 버니님이 절 억압한 방식이 옳다고는 생각하지 않아요.\n\n하지만 저는 이제 마냥 피하기만 해서는 안 된다고 생각해요.\n\n직접 버니님께 이런 부분은 감사하지만 이런 부분은 속상하다고 이야기를 드려볼까해요.\n\n단 둘이 이야기할 용기가 나지 않으면 인사팀 허니님의 도움을 받아볼까도 싶어요.\n\n\n사람들은 누구나 살면서 여러가지 고난과 역경에 부딪히게 되잖아요.\n\n그 때 혼자 끙끙 앓을 것인가, 그냥 피해버릴 것인가.\n\n아니면 문제에 직면하고 부딪혀서 돌파구를 찾아낼 것인가.\n\n나의 선택에 따라 많은 것들이 바뀔 수 있다고 믿어요.\n\n\n여러분도 여러분의 역경을 극복할 수 있길 바랍니다.```\n\n', fetchReply: true });
   }   else if (commandName === '오프리숀2') {
    await interaction.channel.send('\n\n```당신의 진짜 이름은 overcome 입니다. oppression억압을 잘 극복하셨기 때문에 진짜 이름을 찾으셨습니다.``` \n\n')
+    await interaction.channel.send({ files: ["https://i.imgur.com/wVWUCwO.gif"] });
   }else if (commandName === '오프리숀3') {
     await interaction.channel.send('\n\n```당신은...``` \n')
     await interaction.channel.send('||안||')
-    await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
-    const message = await interaction.channel.send({ files: ["https://i.imgur.com/wVWUCwO.gif"] });
+   const message = await interaction.channel.send('```이라는 키워드를 얻으셨습니다.```')
     message.react('❤️');
   } else if (commandName === '약한') {
     interaction.reply({ files: ["https://i.imgur.com/1Bt7xpH.png"] });
