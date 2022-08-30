@@ -1,6 +1,7 @@
 // Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
 const wait = require('node:timers/promises').setTimeout;///딜레이 구문
+const { ekdha } = require('./config.json');
 ///추가문
 const tkrwpehla = "개 삭제됨"
 ///
