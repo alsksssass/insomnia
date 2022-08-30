@@ -422,11 +422,11 @@ client.on('interactionCreate', async interaction => {
       .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
       .catch(console.error);
     ///입력
-    const tkrwp11 = await client.channels.cache.get('999886290008932433')
+    const tkrwp11 = await client.channels.cache.get('992324945277374484')
     await tkrwp11.bulkDelete(99)
       .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
       .catch(console.error);
-    ///습득품
+    ///사건의 전말
     const tkrwp12 = await client.channels.cache.get('999907699070353469')
     await tkrwp12.bulkDelete(99)
       .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
@@ -468,9 +468,9 @@ client.on('interactionCreate', async interaction => {
   } else if (commandName === '평가표') {
     const message = await interaction.reply({ content: 'https://i.imgur.com/N6Atf8d.png', fetchReply: true });
     message.react('❤️');
-  } else if (commandName === '야') {
-    const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
-    message.react('👍');
+  } else if (commandName === '발달표') {
+    const message = await interaction.reply({ content: 'https://i.imgur.com/N6Atf8d.png', fetchReply: true });
+    message.react('❤️');
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
