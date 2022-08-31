@@ -249,6 +249,7 @@ client.on('interactionCreate', async interaction => {
     await message9.react('❤️');
     const message10 = await client.channels.cache.get('999908072879292477').send('```오프리숀, 회사에서 널 힘들 게 하는 게 뭐야?\n\n지금 그 상황을 어떻게 해결하고 싶어? ```');////10
     await message10.react('❤️');
+    const message11 = await client.channels.cache.get('991916794308743198').send('```/ 입력후 비번 입력(입력할 비번말고) 엔터 후 비번입력(시도하고싶은 비번) 후 엔터 다시한번```');
   } else if (interaction.commandName === '올청소') {
     await interaction.reply('삭제(Max500)');
     const tkrwp = await client.channels.cache.get('1003991219275321364')
