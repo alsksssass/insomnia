@@ -5,6 +5,7 @@ const { ekdha } = require('./config.json');
 ///추가문
 const tkrwpehla = "개 삭제됨"
 let wjdekq = '010가나가나가나가나'
+let tpttlrks = 0
 ///
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions] });
@@ -510,9 +511,41 @@ client.on('interactionCreate', async interaction => {
       const message7 = await interaction.reply({ content: '잘못된 비밀번호다 ㅠㅠ', fetchReply: true })
       message7.react('🔒');
     }
-  } else if (commandName === '야') {
-    const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
-    message.react('👍');
+  } else if (commandName === '시간') {
+    const number121 = interaction.options.getNumber('시간');
+    let dhdfn = 116
+    let dhvmfl = 124
+
+
+
+    if (number121 == dhdfn && tpttlrks == 0) {
+      const message1 = await interaction.reply({ content: '생활관 시계를 제대로 맞췄다!', fetchReply: true })
+      message1.react('🔓');
+      const message2 = await client.channels.cache.get('1001495384092332162').send('```시간을 제대로 맞추었다!!```');
+      message2.react('🔓');
+    }
+    else if (number121 == dhvmfl && tpttlrks == 0) {
+      const message3 = await interaction.reply({ content: '사무실 시계를 제대로 맞췄다!', fetchReply: true })
+      message3.react('🔓');
+      const message4 = await client.channels.cache.get('1001495463792492635').send('```시간을 제대로 맞추었다!!```');
+      message4.react('🔓');
+    }
+    else if (tpttlrks >= 1) {
+      console.log(number121)
+      console.log(tpttlrks)
+      const message7 = await interaction.reply({ content: '노래를 부르지 않으면 시간을 다시 맞출 수 없다!', fetchReply: true })
+      message7.react('🔒');
+    }
+    else {
+      console.log(number121)
+      console.log(tpttlrks)
+      const message7 = await interaction.reply({ content: '잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.', fetchReply: true })
+      message7.react('🔒');
+      tpttlrks += 1
+    }
+} else if (commandName === '시계리셋') {
+    tpttlrks *= 0
+    const message7 = await interaction.reply('```시계를 다시 돌릴 수 있을것 같다!```');
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
