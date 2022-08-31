@@ -482,9 +482,34 @@ client.on('interactionCreate', async interaction => {
       const message1 = await interaction.reply({ content: '없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다', fetchReply: true });
       message1.react('📵');
     }
-  } else if (commandName === '야') {
-    const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
-    message.react('👍');
+  }   else if (commandName === '비번') {
+    const number11 = interaction.options.getNumber('비번');
+    let tndud = 111
+    let vpdjsht = 486
+    let gkskenfl = 9321
+
+    if (number11 === tndud) {
+      const message = await interaction.reply({ content: '수영이 비밀번호가 풀렸다!', fetchReply: true })
+      message1.react('🔓');
+      const message2 = await client.channels.cache.get('1001494976041058375').send('```수영이 자물쇠 비밀번호가 풀렸다```');
+      message2.react('🔓');
+    }
+    else if (number11 === gkskenfl) {
+      const message3 = await interaction.reply({ content: '멍뭉이집 비밀번호가 풀렸다!', fetchReply: true })
+      message3.react('🔓');
+      const message4 = await client.channels.cache.get('1001494798512947320').send('```멍뭉이집 자물쇠 비밀번호가 풀렸다```');
+      message4.react('🔓');
+    }
+    else if (number11 === vpdjsht) {
+      const message5 = await interaction.reply({ content: '노트북 비밀번호가 풀렸다!', fetchReply: true })
+      message5.react('🔓');
+      const message6 = await client.channels.cache.get('999907932697276456').send('```페어 노트북 비밀번호가 풀렸다```');
+      message6.react('🔓');
+    }
+    else {
+      const message7 = await interaction.reply({ content: '잘못된 비밀번호다 ㅠㅠ', fetchReply: true })
+      message7.react('🔒');
+    }
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
