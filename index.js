@@ -471,9 +471,14 @@ client.on('interactionCreate', async interaction => {
     const string = interaction.options.getString('진행말');
     const message = await interaction.reply({ content: ekdha+string+ekdha, fetchReply: true })
     message.react('❤️');
-   } else if (commandName === '야') {
-    const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
-    message.react('👍');
+   } else if (commandName === '전화') {
+     const string = interaction.options.getString('다이얼');
+     if (다이얼 === 010가나가나가나가나) {
+    const message = await interaction.reply({ content: '뚜르르르르 뚜르르르르', fetchReply: true });
+    message.react('📲');
+     }
+     else const message1 = await interaction.reply({ content: '없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다', fetchReply: true });
+    message1.react('📵');
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
