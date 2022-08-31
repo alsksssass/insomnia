@@ -489,7 +489,7 @@ client.on('interactionCreate', async interaction => {
     let gkskenfl = 9321
 
     if (number11 === tndud) {
-      const message = await interaction.reply({ content: '수영이 비밀번호가 풀렸다!', fetchReply: true })
+      const message1 = await interaction.reply({ content: '수영이 비밀번호가 풀렸다!', fetchReply: true })
       message1.react('🔓');
       const message2 = await client.channels.cache.get('1001494976041058375').send('```수영이 자물쇠 비밀번호가 풀렸다```');
       message2.react('🔓');
