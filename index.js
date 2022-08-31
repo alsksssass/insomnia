@@ -473,7 +473,7 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
    } else if (commandName === '전화') {
      const string = interaction.options.getString('다이얼');
-     if (다이얼 === 010가나가나가나가나) {
+     if (string === 010가나가나가나가나) {
     const message = await interaction.reply({ content: '뚜르르르르 뚜르르르르', fetchReply: true });
     message.react('📲');
      }
