@@ -504,7 +504,7 @@ client.on('interactionCreate', async interaction => {
     else if (number11 === vpdjsht) {
       const message5 = await interaction.reply({ content: '노트북 비밀번호가 풀렸다!', fetchReply: true })
       message5.react('🔓');
-      const message6 = await client.channels.cache.get('999907932697276456').send('```페어 노트북 비밀번호가 풀렸다```');
+      const message6 = await client.channels.cache.get('1001495326068314152').send('```페어 노트북 비밀번호가 풀렸다```');
       message6.react('🔓');
     }
     else {
