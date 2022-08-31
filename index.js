@@ -4,6 +4,7 @@ const wait = require('node:timers/promises').setTimeout;///딜레이 구문
 const { ekdha } = require('./config.json');
 ///추가문
 const tkrwpehla = "개 삭제됨"
+let wjdekq = '010가나가나가나가나'
 ///
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions] });
@@ -472,13 +473,15 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.reply({ content: ekdha+string+ekdha, fetchReply: true })
     message.react('❤️');
    } else if (commandName === '전화') {
-     const string = interaction.options.getString('다이얼');
-     if (string === 010가나가나가나가나) {
-    const message = await interaction.reply({ content: '뚜르르르르 뚜르르르르', fetchReply: true });
-    message.react('📲');
-     }
-     else const message1 = await interaction.reply({ content: '없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다', fetchReply: true });
-    message1.react('📵');
+    const string = interaction.options.getString('다이얼');
+    if (string === wjdekq) {
+      const message = await interaction.reply({ content: '뚜르르르르 뚜르르르르', fetchReply: true });
+      message.react('📲');
+    }
+    else {
+      const message1 = await interaction.reply({ content: '없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다', fetchReply: true });
+      message1.react('📵');
+    }
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
