@@ -230,6 +230,7 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.reply('https://imgur.com/vckv6vH.png');
     await message.react('❤️');
   } else if (commandName === '셋팅') {
+    wjsghkrkqt *= 0
     const message1 = await client.channels.cache.get('1001494798512947320').send({ files: ["https://imgur.com/rE7As8z.png"] });///1
     await message1.react('❤️');
     const message2 = await client.channels.cache.get('1001494976041058375').send({ files: ["https://imgur.com/cgncqeW.png"] });////2
@@ -555,9 +556,8 @@ client.on('interactionCreate', async interaction => {
     tpttlrks *= 0
   const message4 = await client.channels.cache.get('991916794308743198').send('```시계를 다시 돌릴수 있을것 같다!!```');
   message4.react('❤️');
-  } else if (commandName === '야') {
-    const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
-    message.react('👍');
+  } else if (commandName === '전화기초기화') {
+    wjsghkrkqt *= 0
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
