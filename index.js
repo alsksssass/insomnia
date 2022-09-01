@@ -495,11 +495,13 @@ client.on('interactionCreate', async interaction => {
       message1.react('📵');
 
     }
-        else if (commandName === '패턴') {
+      else if (commandName === '패턴') {
     const string = interaction.options.getString('패턴');
     if (string == voxjs && wjsghkrkqt == 1) {
       const message = await interaction.reply({ content: '잠금이 해제되었다!', fetchReply: true });
       message.react('🔓');
+      const message2 = await client.channels.cache.get('999907932697276456').send('```페어의 패턴이 잠금해제 되었다!!```');
+      message2.react('🔓');
     }
     if(vpdjvhs != 1) {
       const message1 = await interaction.reply({ content: '폰도 없이 어떻게 패턴을 푸나?', fetchReply: true });
@@ -511,11 +513,10 @@ client.on('interactionCreate', async interaction => {
 
     }
 
-else if (commandName === '페어폰'){
-vpdjvhs += 1
-const message1 = await interaction.reply({ content: '페어의 폰은 습득!', fetchReply: true });
+  if (commandName === '페어폰'){
+      vpdjvhs += 1
+      const message1 = await interaction.reply({ content: '페어의 폰을 습득!', fetchReply: true });
       message1.react('📱');
-}
   }   else if (commandName === '비번') {
     const number11 = interaction.options.getNumber('비번');
     let tndud = 111
