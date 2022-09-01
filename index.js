@@ -20,6 +20,8 @@ client.on('interactionCreate', interaction => {
   // ...
 });
 ////비밀번호
+voxjs = '123654789'
+vpdjvhs = 0
 
 
 
@@ -492,6 +494,27 @@ client.on('interactionCreate', async interaction => {
       message1.react('📵');
 
     }
+        else if (commandName === '패턴') {
+    const string = interaction.options.getString('패턴');
+    if (string == voxjs && wjsghkrkqt == 1) {
+      const message = await interaction.reply({ content: '잠금이 해제되었다!', fetchReply: true });
+      message.react('🔓');
+    }
+    if(vpdjvhs != 1) {
+      const message1 = await interaction.reply({ content: '폰도 없이 어떻게 패턴을 푸나?', fetchReply: true });
+      message1.react('🔒');
+    }
+    if(vpdjvhs == 1 && string != voxjs) {
+      const message1 = await interaction.reply({ content: '패턴 오류!', fetchReply: true });
+      message1.react('🔒');
+
+    }
+
+else if (commandName === '페어폰'){
+vpdjvhs += 1
+const message1 = await interaction.reply({ content: '페어의 폰은 습득!', fetchReply: true });
+      message1.react('📱');
+}
   }   else if (commandName === '비번') {
     const number11 = interaction.options.getNumber('비번');
     let tndud = 111
