@@ -492,7 +492,7 @@ client.on('interactionCreate', async interaction => {
     if(wjsghkrkqt == 1 && string != wjdekq) {
       const message1 = await interaction.reply({ content: '없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다', fetchReply: true });
       message1.react('📵');
-
+    }
     }
         else if (commandName === '패턴') {
     const string = interaction.options.getString('패턴');
