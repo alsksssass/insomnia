@@ -67,7 +67,8 @@ const commands = [
   new SlashCommandBuilder().setName('시간').setDescription('ex)1시10분=>0110').addNumberOption(option => option.setName('시간').setDescription('시간을 맞춰보자')),
   new SlashCommandBuilder().setName('시계리셋').setDescription('시계리셋').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('전화기초기화').setDescription('전화기습득초기화').setDefaultMemberPermissions(0),
-  
+  new SlashCommandBuilder().setName('패턴').setDescription('패턴 잠금 풀기').addStringOption(option => option.setName('패턴').setDescription('번호적기')),
+  new SlashCommandBuilder().setName('페어폰').setDescription('패턴용 페어폰 습득').setDefaultMemberPermissions(0),
 ]
   .map(command => command.toJSON());
 
