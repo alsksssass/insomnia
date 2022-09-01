@@ -33,7 +33,7 @@ client.on('interactionCreate', async interaction => {
   const { commandName } = interaction;
 
   if (commandName === '개집벽') {
-    const message = await interaction.reply({ content: 'https://i.imgur.com/ZhPmtAD.jpg', fetchReply: true });
+    const message = await interaction.reply({ files: 'https://i.imgur.com/ZhPmtAD.jpg', fetchReply: true });
     message.react('❤️');
   } else if (commandName === '노란병') {
     await interaction.reply({ files: ["https://i.imgur.com/f3NJzdv.png"] });
