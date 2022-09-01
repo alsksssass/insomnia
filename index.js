@@ -233,6 +233,7 @@ client.on('interactionCreate', async interaction => {
     await message.react('❤️');
   } else if (commandName === '셋팅') {
     wjsghkrkqt *= 0
+    vpdjvhs *= 0
     const message1 = await client.channels.cache.get('1001494798512947320').send({ files: ["https://imgur.com/rE7As8z.png"] });///1
     await message1.react('❤️');
     const message2 = await client.channels.cache.get('1001494976041058375').send({ files: ["https://imgur.com/cgncqeW.png"] });////2
@@ -581,6 +582,7 @@ const message1 = await interaction.reply({ content: '페어의 폰은 습득!', 
   message4.react('❤️');
   } else if (commandName === '전화기초기화') {
     wjsghkrkqt *= 0
+    vpdjvhs *= 0
     await interaction.reply('초기화됨')
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
