@@ -495,6 +495,7 @@ client.on('interactionCreate', async interaction => {
       message1.react('📵');
 
     }
+  }
       else if (commandName === '패턴') {
     const string = interaction.options.getString('패턴');
     if (string == voxjs && wjsghkrkqt == 1) {
@@ -512,6 +513,7 @@ client.on('interactionCreate', async interaction => {
       message1.react('🔒');
 
     }
+  }
 
   if (commandName === '페어폰'){
       vpdjvhs += 1
@@ -611,6 +613,8 @@ client.on('interactionCreate', async interaction => {
     message.react('👍');
   }
 });
+
+
 
 // Login to Discord with your client's token
 client.login(process.env.TOKEN);
