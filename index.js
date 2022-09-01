@@ -33,7 +33,8 @@ client.on('interactionCreate', async interaction => {
   const { commandName } = interaction;
 
   if (commandName === '개집벽') {
-    const message = await interaction.reply({ files: ["https://i.imgur.com/nggO2gq.jpg"] });
+    await interaction.deferReply();
+    const message = await interaction.channel.send({ files: ["https://i.imgur.com/nggO2gq.jpg"] });
     message.react('❤️');
   } else if (commandName === '노란병') {
     await interaction.reply({ files: ["https://i.imgur.com/f3NJzdv.png"] });
