@@ -33,7 +33,8 @@ client.on('interactionCreate', async interaction => {
   const { commandName } = interaction;
 
   if (commandName === '개집벽') {
-    const message = await interaction.reply('https://i.imgur.com/nggO2gq.jpg');
+    await interaction.deferReply();
+    const message = await interaction.channel.send({ files: ["https://i.imgur.com/nggO2gq.jpg"] });
     message.react('❤️');
   } else if (commandName === '노란병') {
     await interaction.reply({ files: ["https://i.imgur.com/f3NJzdv.png"] });
@@ -47,7 +48,6 @@ client.on('interactionCreate', async interaction => {
     const message1 = await client.channels.cache.get('999886290008932433').send('```황금열쇠\n어딘가에 쓸수있지 않을까?```');
     await message1.react('❤️');
   } else if (commandName === '구일띠일기') {
-    
     const message = await interaction.reply({ files: ["https://i.imgur.com/wJDaUPJ.png"] });
     message.react('❤️');
   } else if (commandName === '찢어진그림') {
