@@ -33,7 +33,7 @@ client.on('interactionCreate', async interaction => {
   const { commandName } = interaction;
 
   if (commandName === '개집벽') {
-    const message = await interaction.reply({ content: 'https://i.imgur.com/nggO2gq.jpg', fetchReply: true });
+    const message = await interaction.reply({ files: ["https://i.imgur.com/nggO2gq.jpg"] });
     message.react('❤️');
   } else if (commandName === '노란병') {
     await interaction.reply({ files: ["https://i.imgur.com/f3NJzdv.png"] });
@@ -47,7 +47,8 @@ client.on('interactionCreate', async interaction => {
     const message1 = await client.channels.cache.get('999886290008932433').send('```황금열쇠\n어딘가에 쓸수있지 않을까?```');
     await message1.react('❤️');
   } else if (commandName === '구일띠일기') {
-    const message = await interaction.reply({ content: 'https://i.imgur.com/wJDaUPJ.png', fetchReply: true });
+    
+    const message = await interaction.reply({ files: ["https://i.imgur.com/wJDaUPJ.png"] });
     message.react('❤️');
   } else if (commandName === '찢어진그림') {
     await interaction.reply({ files: ["https://i.imgur.com/wFH3GHB.png"] });
@@ -64,13 +65,14 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.channel.send({ files: ["https://i.imgur.com/CfBZtTN.png"] });
     message.react('❤️');
   } else if (commandName === '쪽지') {
-    const message = await interaction.reply({ content: 'https://i.imgur.com/THRjag4.png', fetchReply: true });
+    await interaction.reply({ files: ["https://i.imgur.com/THRjag4.png"] });
+    const message = await interaction.reply({ files: ["https://i.imgur.com/THRjag4.png"] });
     message.react('❤️');
   } else if (commandName === '수영일기') {
-    const message = await interaction.reply({ content: 'https://i.imgur.com/znbUwQX.png', fetchReply: true });
+    const message = await interaction.reply({ files: ["https://i.imgur.com/znbUwQX.png"] });
     message.react('❤️');
   } else if (commandName === '책') {
-    const message = await interaction.reply({ content: 'https://i.imgur.com/AiT9oUW.jpg', fetchReply: true });
+    const message = await interaction.reply({ files: ["https://i.imgur.com/AiT9oUW.jpg"] });
     message.react('❤️');
   } else if (commandName === '페어일기') {
     await interaction.reply({ files: ["https://i.imgur.com/1Z9cAV6.png"] });
