@@ -6,7 +6,6 @@ const { ekdha } = require('./config.json');
 const tkrwpehla = "개 삭제됨"
 let wjdekq = '010가나가나가나가나'
 let tpttlrks = 0
-let wjsghkrkqt = 0
 ///
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions] });
@@ -123,7 +122,6 @@ client.on('interactionCreate', async interaction => {
     const message1 = await client.channels.cache.get('999886290008932433').send('```가나파이```');
     await message1.react('❤️');
   } else if (commandName === '휴대폰') {
-    wjsghkrkqt += 1
     const message = await interaction.reply({ content: 'https://i.imgur.com/nQI3PI3.jpg/n', fetchReply: true });
     message.react('❤️');
     await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/nQI3PI3.jpg');
@@ -230,7 +228,6 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.reply('https://imgur.com/vckv6vH.png');
     await message.react('❤️');
   } else if (commandName === '셋팅') {
-    wjsghkrkqt *= 0
     const message1 = await client.channels.cache.get('1001494798512947320').send({ files: ["https://imgur.com/rE7As8z.png"] });///1
     await message1.react('❤️');
     const message2 = await client.channels.cache.get('1001494976041058375').send({ files: ["https://imgur.com/cgncqeW.png"] });////2
@@ -477,20 +474,15 @@ client.on('interactionCreate', async interaction => {
     const string = interaction.options.getString('진행말');
     const message = await interaction.reply({ content: ekdha+string+ekdha, fetchReply: true })
     message.react('❤️');
-   }   else if (commandName === '전화') {
+   } else if (commandName === '전화') {
     const string = interaction.options.getString('다이얼');
-    if (string == wjdekq && wjsghkrkqt == 1) {
+    if (string === wjdekq) {
       const message = await interaction.reply({ content: '뚜르르르르 뚜르르르르', fetchReply: true });
       message.react('📲');
     }
-    if(wjsghkrkqt != 1) {
-      const message1 = await interaction.reply({ content: '폰도 없이 어떻게 전화를 걸지??', fetchReply: true });
-      message1.react('📵');
-    }
-    if(wjsghkrkqt == 1 && string != wjdekq) {
+    else {
       const message1 = await interaction.reply({ content: '없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다', fetchReply: true });
       message1.react('📵');
-
     }
   }   else if (commandName === '비번') {
     const number11 = interaction.options.getNumber('비번');
@@ -556,9 +548,9 @@ client.on('interactionCreate', async interaction => {
     tpttlrks *= 0
   const message4 = await client.channels.cache.get('991916794308743198').send('```시계를 다시 돌릴수 있을것 같다!!```');
   message4.react('❤️');
-  } else if (commandName === '전화기초기화') {
-    wjsghkrkqt *= 0
-    await interaction.reply('초기화됨')
+  } else if (commandName === '야') {
+    const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
+    message.react('👍');
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
