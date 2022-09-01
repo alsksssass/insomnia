@@ -558,6 +558,7 @@ client.on('interactionCreate', async interaction => {
   message4.react('❤️');
   } else if (commandName === '전화기초기화') {
     wjsghkrkqt *= 0
+    await interaction.reply('초기화됨')
   } else if (commandName === '야') {
     const message = await interaction.reply({ content: 'You can react with custom emojis!', fetchReply: true });
     message.react('👍');
