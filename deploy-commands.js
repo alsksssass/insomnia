@@ -4,6 +4,7 @@ const { clientId, guildId } = require('./config.json');
 
 const commands = [
   new SlashCommandBuilder().setName('개집벽').setDescription('구일띠 방의 개집벽 그림').setDefaultMemberPermissions(0),
+  new SlashCommandBuilder().setName('전화기초기화').setDescription('전화기습득초기화').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('노란병').setDescription('구일띠 방의 개집안 밥그릇 확인시').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('황금열쇠').setDescription('황금열쇠').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('구일띠일기').setDescription('구일띠 방에서 발견되는 페어 일기').setDefaultMemberPermissions(0),
