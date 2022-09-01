@@ -513,7 +513,6 @@ client.on('interactionCreate', async interaction => {
     const message = await interaction.reply({ content: ekdha+string+ekdha, fetchReply: true })
     message.react('❤️');
    }   else if (commandName === '전화') {
-    await interaction.deferReply();
     const string = interaction.options.getString('다이얼');
     if (string == wjdekq && wjsghkrkqt == 1) {
       await interaction.deferReply();
