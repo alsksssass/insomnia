@@ -521,11 +521,12 @@ client.on('interactionCreate', async interaction => {
       message.react('📲');
     }
     if(wjsghkrkqt != 1) {
-      
+          await interaction.deferReply();
       const message1 = await interaction.channel.send('폰도 없이 어떻게 전화를 걸지??');
       message1.react('📵');
     }
     if(wjsghkrkqt == 1 && string != wjdekq) {
+          await interaction.deferReply();
       const message1 = await interaction.channel.send('없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다');
       message1.react('📵');
     }
@@ -538,16 +539,19 @@ client.on('interactionCreate', async interaction => {
       message.react('🔓');
     }
     if(vpdjvhs != 1) {
+          await interaction.deferReply();
       const message1 = await interaction.channel.send('폰도 없이 어떻게 패턴을 푸나?');
       message1.react('🔒');
     }
     if(vpdjvhs == 1 && string != voxjs) {
+          await interaction.deferReply();
       const message1 = await interaction.channel.send('패턴 오류!');
       message1.react('🔒');
 
     }
 
 else if (commandName === '페어폰'){
+      await interaction.deferReply();
 vpdjvhs += 1
 const message1 = await interaction.channel.send('페어의 폰은 습득!');
       message1.react('📱');
@@ -559,24 +563,28 @@ const message1 = await interaction.channel.send('페어의 폰은 습득!');
     let gkskenfl = 9321
 
     if (number11 === tndud) {
+          await interaction.deferReply();
       const message1 = await interaction.channel.send('```수영이 비밀번호가 풀렸다!```');
       message1.react('🔓');
       const message2 = await client.channels.cache.get('1001494976041058375').send('```수영이 자물쇠 비밀번호가 풀렸다```');
       message2.react('🔓');
     }
     else if (number11 === gkskenfl) {
+          await interaction.deferReply();
       const message3 = await interaction.channel.send('```멍뭉이집 비밀번호가 풀렸다!```');
       message3.react('🔓');
       const message4 = await client.channels.cache.get('1001494798512947320').send('```멍뭉이집 자물쇠 비밀번호가 풀렸다```');
       message4.react('🔓');
     }
     else if (number11 === vpdjsht) {
+          await interaction.deferReply();
       const message5 = await interaction.channel.send('```노트북 비밀번호가 풀렸다!```');
       message5.react('🔓');
       const message6 = await client.channels.cache.get('1001495326068314152').send('```페어 노트북 비밀번호가 풀렸다```');
       message6.react('🔓');
     }
     else {
+          await interaction.deferReply();
       const message7 = await interaction.channel.send('```잘못된 비밀번호다 ㅠㅠ```');
       message7.react('🔒');
     
@@ -588,24 +596,28 @@ const message1 = await interaction.channel.send('페어의 폰은 습득!');
 
 
     if (number121 == dhdfn && tpttlrks == 0) {
+          await interaction.deferReply();
       const message1 = await interaction.channel.send('```생활관 시계를 제대로 맞췄다!```')
       message1.react('🔓');
       const message2 = await client.channels.cache.get('1001495384092332162').send('```시간을 제대로 맞추었다!!```');
       message2.react('🔓');
     }
     else if (number121 == dhvmfl && tpttlrks == 0) {
+          await interaction.deferReply();
       const message3 = await interaction.channel.send('```사무실 시계를 제대로 맞췄다!```')
       message3.react('🔓');
       const message4 = await client.channels.cache.get('1001495463792492635').send('```시간을 제대로 맞추었다!!```');
       message4.react('🔓');
     }
     else if (tpttlrks >= 1) {
+          await interaction.deferReply();
       console.log(number121)
       console.log(tpttlrks)
       const message7 = await interaction.channel.send('```노래를 부르지 않으면 시간을 다시 맞출 수 없다!```')
       message7.react('🔒');
     }
     else {
+          await interaction.deferReply();
       console.log(number121)
       console.log(tpttlrks)
       const message7 = await interaction.channel.send('```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.```')
@@ -613,6 +625,7 @@ const message1 = await interaction.channel.send('페어의 폰은 습득!');
       tpttlrks += 1
     }
 } else if (commandName === '시계리셋') {
+      await interaction.deferReply();
     tpttlrks *= 0
   const message4 = await client.channels.cache.get('991916794308743198').send('```시계를 다시 돌릴수 있을것 같다!!```');
   message4.react('❤️');
