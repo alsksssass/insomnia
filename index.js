@@ -34,7 +34,7 @@ client.on('interactionCreate', async interaction => {
 
   if (commandName === '개집벽') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/ZhPmtAD.jpg');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/ZhPmtAD.jpg'] });
     message.react('❤️');
   } else if (commandName === '노란병') {
     await interaction.deferReply();
@@ -45,12 +45,12 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply({ files: ["https://i.imgur.com/clooiJ4.png"] });
     const message = await interaction.channel.send('```뒤적뒤적, 황금색 작은 열쇠가 나왔다!```');
     message.react('❤️');
-    await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/clooiJ4.png');
+    await client.channels.cache.get('999886290008932433').send({ files: ['https://i.imgur.com/clooiJ4.png'] });
     const message1 = await client.channels.cache.get('999886290008932433').send('```황금열쇠\n어딘가에 쓸수있지 않을까?```');
     await message1.react('❤️');
   } else if (commandName === '구일띠일기') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/wJDaUPJ.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/wJDaUPJ.png'] });
     message.react('❤️');
   } else if (commandName === '찢어진그림') {
     await interaction.reply({ files: ["https://i.imgur.com/wFH3GHB.png"] });
@@ -68,15 +68,15 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
   } else if (commandName === '쪽지') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/THRjag4.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/THRjag4.png'] });
     message.react('❤️');
   } else if (commandName === '수영일기') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/znbUwQX.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/znbUwQX.png'] });
     message.react('❤️');
   } else if (commandName === '책') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/AiT9oUW.jpg');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/AiT9oUW.jpg'] });
     message.react('❤️');
   } else if (commandName === '페어일기') {
     await interaction.reply({ files: ["https://i.imgur.com/1Z9cAV6.png"] });
@@ -84,23 +84,23 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
   } else if (commandName === '자물쇠') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/DMHtsiB.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/DMHtsiB.png'] });
     message.react('❤️');
   } else if (commandName === '편지') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/5PVcuJH.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/5PVcuJH.png'] });
     message.react('❤️');
   } else if (commandName === '편지2') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/Z2S8LoX.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/Z2S8LoX.png'] });
     message.react('❤️');
   } else if (commandName === '수양록') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/AyE0lGQ.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/AyE0lGQ.png'] });
     message.react('❤️');
   } else if (commandName === '수양록2') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/uXrhMQw.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/uXrhMQw.png'] });
     message.react('❤️');
   } else if (commandName === '연봉계약서') {
     await interaction.reply({ files: ["https://i.imgur.com/aB8eLCv.jpg"] });
@@ -108,15 +108,15 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
   } else if (commandName === '포스터') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/QfyJFtx.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/QfyJFtx.png'] });
     message.react('❤️');
   } else if (commandName === '메일함') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/Thr8QvG.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/Thr8QvG.png'] });
     message.react('❤️');
   } else if (commandName === '합격') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/aBAMc11.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/aBAMc11.png'] });
     message.react('❤️');
   } else if (commandName === '오일기') {
     await interaction.reply({ files: ["https://i.imgur.com/j3imE48.png"] });
@@ -131,45 +131,45 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
   } else if (commandName === '영양제') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/7gvfEXd.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/7gvfEXd.png'] });
     message.react('❤️');
   } else if (commandName === '가나파이') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/APrRnmw.png/n');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/APrRnmw.png'] });
     message.react('❤️');
-    await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/APrRnmw.png');
+    await client.channels.cache.get('999886290008932433').send({ files: ['https://i.imgur.com/APrRnmw.png'] });
     const message1 = await client.channels.cache.get('999886290008932433').send('```가나파이```');
     await message1.react('❤️');
   } else if (commandName === '휴대폰') {
     await interaction.deferReply();
     wjsghkrkqt += 1
-    const message = await interaction.channel.send('https://i.imgur.com/nQI3PI3.jpg/n');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/nQI3PI3.jpg/n');
     message.react('❤️');
-    await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/nQI3PI3.jpg');
+    await client.channels.cache.get('999886290008932433').send({ files: ['https://i.imgur.com/nQI3PI3.jpg'] });
     const message1 = await client.channels.cache.get('999886290008932433').send('```휴대폰\n어딘가로 전화할 수 있지 않을까?```');
     await message1.react('❤️');
   } else if (commandName === '의자') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/5BoeqCf.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/5BoeqCf.png'] });
     message.react('❤️');
-    await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/5BoeqCf.png');
+    await client.channels.cache.get('999886290008932433').send({ files: ['https://i.imgur.com/5BoeqCf.png'] });
     const message1 = await client.channels.cache.get('999886290008932433').send('```의자\n어딘가에 사용할수 있지 않을까?```');
     await message1.react('❤️');
   } else if (commandName === '찢어진그림2') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/T9Ui5jg.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/T9Ui5jg.png'] });
     message.react('❤️');
   } else if (commandName === '대걸레') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/gocujxj.jpg');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/gocujxj.jpg'] });
     message.react('❤️');
-    await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/gocujxj.jpg');
+    await client.channels.cache.get('999886290008932433').send({ files: ['https://i.imgur.com/gocujxj.jpg'] });
     const message1 = await client.channels.cache.get('999886290008932433').send('```대걸레\n어딘가에 사용할수 있지 않을까?```');
     await message1.react('❤️');
   } else if (commandName === '결말') {
     await interaction.deferReply();
     await interaction.channel.send('```나 때문에 죽은 줄 알았던 강아지 리먼이는 나 때문이 아니었다. 내가 리먼이에게 준 것은 강아지 영양제였다. 나는 추억memory을 얻었다. \n\n열여섯살의 나는 시기와 질투심에 쌓여 주변을 제대로 둘러보지 못 했지만 나도 누군가의 선망의 대상이었음을 알게 되었다. 나는 자존감ego을 얻었다.\n\n스무살, 나에게 심하게 집착하던 캐니가 두려워 나는 또 그러한 관계가 될까봐 누구도 만나지 못 하고 외출도 제대로 하지 못 했다. 하지만 나는 강력하게 대응했으며, 그녀가 그런 행동을 한 것은 내 탓이 아님을 깨달았다. 난 아무것도 잘못한게 없다. 난 돌파구break away를 찾았다.\n\n스물한 살, 나는 괴롭힘당하던 최후임을 모른 척 방관했지만, 진심어린 사과 후에 내가 남모르게 건넸던 작은 호의들이 후임이에게 의지가 되었다는 걸 알았다. 꼭 진실어린sincere 마음으로 제대로 사과해야지.\n\n스물여덟 살, 날 괴롭히고 억압한다고 생각했던 버니상사는 사실 날 위해 해주고 있는 일들도 많았다. 내가 극복overcome하고 용기를 내어 이야기하자 버니상사는 나의 이야기를 듣고 공감해주었다. 나는 이제 부당하게 당하는 일들에 대해 목소리 낼 수 있다.\n\n\n이제 내일이 오는 게 두렵지 않다.\n\n\n마음 속의 짐이 덜어지자 민성이는 편안하게 숙면에 빠져든다.\n\n\n민성아, 잘 자.``` \n ');
-    const message = await interaction.channel.send('https://i.imgur.com/Jgv2qy6.gif')
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/Jgv2qy6.gif')
     message.react('❤️');
   } else if (commandName === '결말2') {
     await interaction.deferReply();
@@ -246,7 +246,7 @@ client.on('interactionCreate', async interaction => {
     await message.react('❤️');
   } else if (commandName === '쪽지오픈') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/lVtW2UT.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/lVtW2UT.png'] });
     await message.react('❤️');
   } else if (commandName === '캘린더') {
     await interaction.reply({ files: ["https://imgur.com/ixPGUMd.png"] });
@@ -259,7 +259,7 @@ client.on('interactionCreate', async interaction => {
     await message.react('❤️');
   } else if (commandName === '이력서') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://imgur.com/vckv6vH.png');
+    const message = await interaction.channel.send({ files: ['https://imgur.com/vckv6vH.png'] });
     await message.react('❤️');
   } else if (commandName === '셋팅') {
     await interaction.deferReply();
@@ -502,11 +502,11 @@ client.on('interactionCreate', async interaction => {
     message.react('❤️');
   } else if (commandName === '평가표') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/N6Atf8d.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/N6Atf8d.png'] });
     message.react('❤️');
   } else if (commandName === '발달표') {
     await interaction.deferReply();
-    const message = await interaction.channel.send('https://i.imgur.com/N6Atf8d.png');
+    const message = await interaction.channel.send({ files: ['https://i.imgur.com/N6Atf8d.png'] });
     message.react('❤️');
   } if (commandName === '오박사') {
     const string = interaction.options.getString('진행말');
