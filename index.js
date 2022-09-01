@@ -6,6 +6,7 @@ const { ekdha } = require('./config.json');
 const tkrwpehla = "개 삭제됨"
 let wjdekq = '010가나가나가나가나'
 let tpttlrks = 0
+let wjsghkrkqt = 0
 ///
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions] });
@@ -122,6 +123,7 @@ client.on('interactionCreate', async interaction => {
     const message1 = await client.channels.cache.get('999886290008932433').send('```가나파이```');
     await message1.react('❤️');
   } else if (commandName === '휴대폰') {
+    wjsghkrkqt += 1
     const message = await interaction.reply({ content: 'https://i.imgur.com/nQI3PI3.jpg/n', fetchReply: true });
     message.react('❤️');
     await client.channels.cache.get('999886290008932433').send('https://i.imgur.com/nQI3PI3.jpg');
@@ -474,15 +476,20 @@ client.on('interactionCreate', async interaction => {
     const string = interaction.options.getString('진행말');
     const message = await interaction.reply({ content: ekdha+string+ekdha, fetchReply: true })
     message.react('❤️');
-   } else if (commandName === '전화') {
+   }   else if (commandName === '전화') {
     const string = interaction.options.getString('다이얼');
-    if (string === wjdekq) {
+    if (string == wjdekq && wjsghkrkqt == 1) {
       const message = await interaction.reply({ content: '뚜르르르르 뚜르르르르', fetchReply: true });
       message.react('📲');
     }
-    else {
+    if(wjsghkrkqt != 1) {
+      const message1 = await interaction.reply({ content: '폰도 없이 어떻게 전화를 걸지??', fetchReply: true });
+      message1.react('📵');
+    }
+    if(wjsghkrkqt == 1 && string != wjdekq) {
       const message1 = await interaction.reply({ content: '없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다', fetchReply: true });
       message1.react('📵');
+
     }
   }   else if (commandName === '비번') {
     const number11 = interaction.options.getNumber('비번');
