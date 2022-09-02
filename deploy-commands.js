@@ -62,7 +62,7 @@ const commands = [
   new SlashCommandBuilder().setName('허사장').setDescription('허경영사장').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('평가표').setDescription('평가표').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('오박사').setDescription('진행자말').addStringOption(option => option.setName('진행말').setDescription('메시지넣기')).setDefaultMemberPermissions(0),
-  new SlashCommandBuilder().setName('비번').setDescription('비밀번호 입력,모든비밀 번호는 여기로 입력').addNumberOption(option => option.setName('비번').setDescription('숫자입력하세요')),
+  new SlashCommandBuilder().setName('비번').setDescription('비밀번호 입력,모든비밀 번호는 여기로 입력').addNumberOption(option => option.setName('비번').setDescription('숫자입력하세요')).setDefaultMemberPermissions(1015125836728377405),
   new SlashCommandBuilder().setName('전화').setDescription('전화를 걸어보자').addStringOption(option => option.setName('다이얼').setDescription('번호적기')),
   new SlashCommandBuilder().setName('시간').setDescription('ex)1시10분=>0110').addNumberOption(option => option.setName('시간').setDescription('시간을 맞춰보자')),
   new SlashCommandBuilder().setName('시계리셋').setDescription('시계리셋').setDefaultMemberPermissions(0),
