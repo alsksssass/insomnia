@@ -549,7 +549,7 @@ client.on('interactionCreate', async interaction => {
 
     }
 
-else if (commandName === '페어폰'){
+if (commandName === '페어폰'){
       await interaction.deferReply();
 vpdjvhs += 1
 const message1 = await interaction.channel.send('페어의 폰은 습득!');
