@@ -631,6 +631,7 @@ const message1 = await interaction.channel.send('페어의 폰을 찾았다!');
   message4.react('❤️');
   } else if (commandName === '전화기초기화') {
     wjsghkrkqt *= 0
+vpdjvhs *= 0
     await interaction.reply('초기화됨')
   } else if (commandName === '야') {
     const message = await interaction.channel.send('You can react with custom emojis!');
