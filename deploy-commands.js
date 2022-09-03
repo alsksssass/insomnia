@@ -528,7 +528,7 @@ client.on('interactionCreate', async interaction => {
     const string = interaction.options.getString('다이얼');
     if (string == wjdekq && wjsghkrkqt == 1) {
       await interaction.deferReply();
-      const message = await interaction.channel.send(' ````전화가 걸렸다 !! 뚜르르르르 뚜르르르르````');
+      const message = await interaction.channel.send('````전화가 걸렸다 !! 뚜르르르르 뚜르르르르````');
       message.react('📲');
     }
     if(wjsghkrkqt != 1) {
