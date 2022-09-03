@@ -158,7 +158,7 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply('지금은 1시입니다. 시계도 못 보니?\n시계 뒷면을 볼 수 있을 것 같다.')
     const message = await interaction.channel.send('```입력에서 시간을 입력해 보자!!```');
     message.react('❤️');
-    const message2 =await client.channels.cache.get('991916794308743198').send('```/전화 명령어로 전화를 걸수 있다!!```');
+    const message2 =await client.channels.cache.get('991916794308743198').send('```/시간 명령어로 시간을 바꿀수 있다!!```');
     await message2.react('❤️');
   } else if (commandName === '의자') {
     await interaction.deferReply();
