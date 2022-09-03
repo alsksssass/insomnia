@@ -546,7 +546,7 @@ client.on('interactionCreate', async interaction => {
     }
         else if (commandName === '패턴') {
     const string = interaction.options.getString('패턴');
-    if (string == 123654789 && wvpdjvhs == 1) {
+    if (string == 123654789 && vpdjvhs == 1) {
       await interaction.deferReply();
       const message = await interaction.channel.send('```잠금이 해제되었다!```');
       message.react('🔓');
