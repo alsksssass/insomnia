@@ -572,33 +572,33 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
 
   }   else if (commandName === '비번') {
     const number11 = interaction.options.getNumber('비번');
-    let tndud = 111
-    let vpdjsht = 486
-    let gkskenfl = 9321
-    let dhdfntjfkq = 0624
+    111//수영
+    486///노트북
+    9321//개집
+    0624///상자
 
-    if (number11 === tndud) {
+    if (number11 === 111) {
           await interaction.deferReply();
       const message1 = await interaction.channel.send('```수영이 비밀번호가 풀렸다!```');
       message1.react('🔓');
       const message2 = await client.channels.cache.get('1001494976041058375').send('```수영이 자물쇠 비밀번호가 풀렸다```');
       message2.react('🔓');
     }
-    else if (number11 === gkskenfl) {
+    else if (number11 === 9321) {
           await interaction.deferReply();
       const message3 = await interaction.channel.send('```멍뭉이집 비밀번호가 풀렸다!```');
       message3.react('🔓');
       const message4 = await client.channels.cache.get('1001494798512947320').send('```멍뭉이집 자물쇠 비밀번호가 풀렸다```');
       message4.react('🔓');
     }
-    else if (number11 === dhdfntjfkq) {
+    else if (number11 === 0624) {
         await interaction.deferReply();
     const message3 = await interaction.channel.send('```큰상자가 열렸다!```');
     message3.react('🔓');
     const message4 = await client.channels.cache.get('1001495463792492635').send('```큰상자가 열렸다!!```');
     message4.react('🔓');
   }
-    else if (number11 === vpdjsht) {
+    else if (number11 === 486) {
           await interaction.deferReply();
       const message5 = await interaction.channel.send('```노트북 비밀번호가 풀렸다!```');
       message5.react('🔓');
