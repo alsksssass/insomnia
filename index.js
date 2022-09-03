@@ -635,7 +635,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
       message7.react('🔒');
     }
     else if (tlrp11 == 0){
-        interaction.reply.('시계가 어디있지?')
+        interaction.reply('시계가 어디있지?')
     }
     else {
     await interaction.deferReply();
