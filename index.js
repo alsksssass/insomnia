@@ -567,6 +567,9 @@ client.on('interactionCreate', async interaction => {
 else if (commandName === '페어폰'){
 vpdjvhs += 1
 await interaction.reply('```두둥!!```')
+const message2 = await client.channels.cache.get('991916794308743198').send({ files: ['https://i.imgur.com/T93cWmJ.png'] });
+      message2.react('📱');
+
 const message1 = await interaction.channel.send('```페어의 폰을 찾았다!```');
       message1.react('📱');
 
