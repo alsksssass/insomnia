@@ -591,7 +591,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
       const message4 = await client.channels.cache.get('1001494798512947320').send('```멍뭉이집 자물쇠 비밀번호가 풀렸다```');
       message4.react('🔓');
     }
-    else if (number11 === 0624) {
+    else if (number11 === 624) {
         await interaction.deferReply();
     const message3 = await interaction.channel.send('```큰상자가 열렸다!```');
     message3.react('🔓');
