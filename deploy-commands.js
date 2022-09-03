@@ -528,7 +528,7 @@ client.on('interactionCreate', async interaction => {
     const string = interaction.options.getString('다이얼');
     if (string == wjdekq && wjsghkrkqt == 1) {
       await interaction.deferReply();
-      const message = await interaction.channel.send('````전화가 걸렸다 !! 뚜르르르르 뚜르르르르````');
+      const message = await interaction.channel.send(' ````전화가 걸렸다 !! 뚜르르르르 뚜르르르르````');
       message.react('📲');
     }
     if(wjsghkrkqt != 1) {
@@ -591,9 +591,9 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     }
     else if (number11 === dhdfntjfkq) {
         await interaction.deferReply();
-    const message3 = await interaction.channel.send('``` 서랍 비밀번호가 풀렸다!```');
+    const message3 = await interaction.channel.send('```큰상자가 열렸다!```');
     message3.react('🔓');
-    const message4 = await client.channels.cache.get('1001495463792492635').send('```멍뭉이집 자물쇠 비밀번호가 풀렸다```');
+    const message4 = await client.channels.cache.get('1001495463792492635').send('```큰상자가 열렸다!!```');
     message4.react('🔓');
   }
     else if (number11 === vpdjsht) {
