@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@alsksssass 
+alsksssass
+/
+insomnia
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+insomnia/index.js /
+@alsksssass
+alsksssass Update index.js
+Latest commit 2d89afe 1 hour ago
+ History
+ 1 contributor
+665 lines (647 sloc)  41.9 KB
+
 // Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
 const wait = require('node:timers/promises').setTimeout;///딜레이 구문
@@ -588,13 +617,11 @@ const message1 = await interaction.channel.send('페어의 폰을 찾았다!');
       const message7 = await interaction.channel.send('```잘못된 비밀번호다 ㅠㅠ```');
       message7.react('🔒');
     
-  } if (commandName === '시간') {
+  }
+ } if (commandName === '시간') {
     const number121 = interaction.options.getNumber('시간');
     let dhdfn = 116
     let dhvmfl = 124
-
-
-
     if (number121 == dhdfn && tpttlrks == 0) {
           await interaction.deferReply();
       const message1 = await interaction.channel.send('```생활관 시계를 제대로 맞췄다!```')
@@ -617,7 +644,7 @@ const message1 = await interaction.channel.send('페어의 폰을 찾았다!');
       message7.react('🔒');
     }
     else {
-          await interaction.deferReply();
+    await interaction.deferReply();
       console.log(number121)
       console.log(tpttlrks)
       const message7 = await interaction.channel.send('```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.```')
