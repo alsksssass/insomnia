@@ -1,33 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@alsksssass 
-alsksssass
-/
-insomnia
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-insomnia/index.js /
-@alsksssass
-alsksssass Update index.js
-Latest commit 2d89afe 1 hour ago
- History
- 1 contributor
-665 lines (647 sloc)  41.9 KB
 
-// Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
 const wait = require('node:timers/promises').setTimeout;///딜레이 구문
 const { ekdha } = require('./config.json');
