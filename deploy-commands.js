@@ -1,4 +1,5 @@
 
+
 // Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
 const wait = require('node:timers/promises').setTimeout;///딜레이 구문
@@ -23,6 +24,7 @@ client.on('interactionCreate', interaction => {
 ////비밀번호
 voxjs = '123654789'
 vpdjvhs = 0
+tlrp11 = 0
 
 
 
@@ -151,7 +153,8 @@ client.on('interactionCreate', async interaction => {
     await message1.react('❤️');
     const message2 =await client.channels.cache.get('991916794308743198').send('```/전화 명령어로 전화를 걸수 있다!!```');
     await message2.react('❤️');
-  } else if (commandName === '시계를 돌려라') {
+  } else if (commandName === '시계 발견!') {
+    tlrp11 += 1
     await interaction.reply('지금은 1시입니다. 시계도 못 보니?/n시계 뒷면을 볼 수 있을 것 같다.')
     const message = await interaction.channel.send('```입력에서 시간을 입력해 보자!!```');
     message.react('❤️');
@@ -610,14 +613,14 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     const number121 = interaction.options.getNumber('시간');
     let dhdfn = 116
     let dhvmfl = 124
-    if (number121 == dhdfn && tpttlrks == 0) {
+    if (number121 == dhdfn && tpttlrks == 0 && tlrp11 == 1) {
           await interaction.deferReply();
       const message1 = await interaction.channel.send('```생활관 시계를 제대로 맞췄다!```')
       message1.react('🔓');
       const message2 = await client.channels.cache.get('1001495384092332162').send('```시간을 제대로 맞추었다!!```');
       message2.react('🔓');
     }
-    else if (number121 == dhvmfl && tpttlrks == 0) {
+    else if (number121 == dhvmfl && tpttlrks == 0 && tlrp11 == 1) {
           await interaction.deferReply();
       const message3 = await interaction.channel.send('```사무실 시계를 제대로 맞췄다!```')
       message3.react('🔓');
@@ -630,6 +633,9 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
       console.log(tpttlrks)
       const message7 = await interaction.channel.send('```노래를 부르지 않으면 시간을 다시 맞출 수 없다!```')
       message7.react('🔒');
+    }
+    else if (tlrp11 == 0){
+        interaction.reply.('시계가 어디있지?')
     }
     else {
     await interaction.deferReply();
@@ -647,6 +653,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
   } else if (commandName === '전화기초기화') {
     wjsghkrkqt *= 0
 vpdjvhs *= 0
+tlrp11 *= 0
     await interaction.reply('초기화됨')
   } else if (commandName === '야') {
     const message = await interaction.channel.send('You can react with custom emojis!');
