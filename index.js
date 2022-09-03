@@ -548,13 +548,14 @@ client.on('interactionCreate', async interaction => {
       message1.react('🔒');
 
     }
+}
 
 else if (commandName === '페어폰'){
 vpdjvhs += 1
 await interaction.reply('두둥!!')
 const message1 = await interaction.channel.send('페어의 폰을 찾았다!');
       message1.react('📱');
-}
+
   }   else if (commandName === '비번') {
     const number11 = interaction.options.getNumber('비번');
     let tndud = 111
