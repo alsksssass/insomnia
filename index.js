@@ -657,7 +657,7 @@ vpdjvhs *= 0
     message.react('👍');
   }
 
-}});
+});
 
 // Login to Discord with your client's token
 client.login(process.env.TOKEN);
