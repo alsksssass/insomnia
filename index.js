@@ -546,7 +546,7 @@ client.on('interactionCreate', async interaction => {
     }
         else if (commandName === '패턴') {
     const string = interaction.options.getString('패턴');
-    if (string == voxjs && wjsghkrkqt == 1) {
+    if (string == 123654789 && wvpdjvhs == 1) {
       await interaction.deferReply();
       const message = await interaction.channel.send('```잠금이 해제되었다!```');
       message.react('🔓');
@@ -556,7 +556,7 @@ client.on('interactionCreate', async interaction => {
       const message1 = await interaction.channel.send('```폰도 없이 어떻게 패턴을 푸나?```');
       message1.react('🔒');
     }
-    if(vpdjvhs == 1 && string != voxjs) {
+    if(vpdjvhs == 1 && string != 123654789) {
           await interaction.deferReply();
       const message1 = await interaction.channel.send('```패턴 오류!```');
       message1.react('🔒');
