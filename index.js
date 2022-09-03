@@ -155,7 +155,7 @@ client.on('interactionCreate', async interaction => {
     await message2.react('❤️');
   } else if (commandName === '시계발견') {
     tlrp11 += 1
-    await interaction.reply('지금은 1시입니다. 시계도 못 보니?/n시계 뒷면을 볼 수 있을 것 같다.')
+    await interaction.reply('지금은 1시입니다. 시계도 못 보니?\n시계 뒷면을 볼 수 있을 것 같다.')
     const message = await interaction.channel.send('```입력에서 시간을 입력해 보자!!```');
     message.react('❤️');
     const message2 =await client.channels.cache.get('991916794308743198').send('```/전화 명령어로 전화를 걸수 있다!!```');
@@ -178,11 +178,13 @@ client.on('interactionCreate', async interaction => {
     await client.channels.cache.get('999886290008932433').send({ files: ['https://i.imgur.com/gocujxj.jpg'] });
     const message1 = await client.channels.cache.get('999886290008932433').send('```대걸레\n어딘가에 사용할수 있지 않을까?```');
     await message1.react('❤️');
-  } else if (commandName === '결말') {
+  } else if (commandName === '결말1-1') {
     await interaction.deferReply();
     await interaction.channel.send('```나 때문에 죽은 줄 알았던 강아지 리먼이는 나 때문이 아니었다. 내가 리먼이에게 준 것은 강아지 영양제였다. 나는 추억memory을 얻었다. \n\n열여섯살의 나는 시기와 질투심에 쌓여 주변을 제대로 둘러보지 못 했지만 나도 누군가의 선망의 대상이었음을 알게 되었다. 나는 자존감ego을 얻었다.\n\n스무살, 나에게 심하게 집착하던 캐니가 두려워 나는 또 그러한 관계가 될까봐 누구도 만나지 못 하고 외출도 제대로 하지 못 했다. 하지만 나는 강력하게 대응했으며, 그녀가 그런 행동을 한 것은 내 탓이 아님을 깨달았다. 난 아무것도 잘못한게 없다. 난 돌파구break away를 찾았다.\n\n스물한 살, 나는 괴롭힘당하던 최후임을 모른 척 방관했지만, 진심어린 사과 후에 내가 남모르게 건넸던 작은 호의들이 후임이에게 의지가 되었다는 걸 알았다. 꼭 진실어린sincere 마음으로 제대로 사과해야지.\n\n스물여덟 살, 날 괴롭히고 억압한다고 생각했던 버니상사는 사실 날 위해 해주고 있는 일들도 많았다. 내가 극복overcome하고 용기를 내어 이야기하자 버니상사는 나의 이야기를 듣고 공감해주었다. 나는 이제 부당하게 당하는 일들에 대해 목소리 낼 수 있다.\n\n\n이제 내일이 오는 게 두렵지 않다.\n\n\n마음 속의 짐이 덜어지자 민성이는 편안하게 숙면에 빠져든다.\n\n\n민성아, 잘 자.``` \n ');
-    const message = await interaction.channel.send({ files: ['https://i.imgur.com/Jgv2qy6.gif'] });
-    message.react('❤️');
+  } else if (commandName === '결말1-2') {
+        await interaction.deferReply();
+        const message = await interaction.channel.send({ files: ['https://i.imgur.com/Jgv2qy6.gif'] });
+        message.react('❤️');
   } else if (commandName === '결말2') {
     await interaction.deferReply();
     const message = await interaction.channel.send({
