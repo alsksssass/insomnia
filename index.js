@@ -660,9 +660,22 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
 vpdjvhs *= 0
 tlrp11 *= 0
     await interaction.reply('초기화됨')
-  } else if (commandName === '야') {
-    const message = await interaction.channel.send('You can react with custom emojis!');
-    message.react('👍');
+  } else if (commandName === '타이머') {
+    		const number = interaction.options.getNumber('num');
+		let time = number
+		await interaction.reply(parseInt(time / 60)+"분"+(time % 60)+"초 타이머 시작")
+		//await interaction.reply('바뀜');
+		//await wait(2000);
+		//await interaction.editReply({ content: "이건어때" });
+		var timer = setInterval(() => {
+			time --
+			interaction.editReply({ content: parseInt(time / 60)+"분"+(time % 60)+"초남음" });
+			if (time === 0) {
+				clearInterval(timer);
+				interaction.editReply({ content: "시간종료" });
+			  }	
+}, 1000
+	)}
   } else if (commandName === '야') {
     const message = await interaction.channel.send('You can react with custom emojis!');
     message.react('👍');
