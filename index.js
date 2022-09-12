@@ -619,7 +619,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
  } if (commandName === '시간') {
     const number121 = interaction.options.getNumber('시간');
     let dhdfn = 116
-    let dhvmfl = 124
+    let dhvmfl = 209
     if (number121 == dhdfn && tpttlrks == 0 && tlrp11 == 1) {
           await interaction.deferReply();
       const message1 = await interaction.channel.send('```생활관 시계를 제대로 맞췄다!```')
