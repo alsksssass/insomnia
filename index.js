@@ -662,15 +662,12 @@ tlrp11 *= 0
     await interaction.reply('초기화됨')
   } else if (commandName === '타이머') {
     		const number = interaction.options.getNumber('시간초');
-		let time = number
-		await interaction.reply(parseInt(time / 60)+"분"+(time % 60)+"초 타이머 시작")
-		//await interaction.reply('바뀜');
-		//await wait(2000);
-		//await interaction.editReply({ content: "이건어때" });
+		let time666 = number
+		await interaction.reply(parseInt(time666 / 60)+"분"+(time666 % 60)+"초 타이머 시작")
 		var timer = setInterval(() => {
-			time --
-			interaction.editReply({ content: parseInt(time / 60)+"분"+(time % 60)+"초남음" });
-			if (time === 0) {
+			time666 --
+			interaction.editReply({ content: parseInt(time666 / 60)+"분"+(time666 % 60)+"초남음" });
+			if (time666 === 0) {
 				clearInterval(timer);
 				interaction.editReply({ content: "시간종료" });
 			  }	
