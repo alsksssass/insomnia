@@ -627,7 +627,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
       const message2 = await client.channels.cache.get('1001495384092332162').send('```시간을 제대로 맞추었다!!```');
       message2.react('🔓');
     }
-    else if (number121 == dhvmfl && tpttlrks == 0 && tlrp11 == 1) {
+    if (number121 == dhvmfl && tpttlrks == 0 && tlrp11 == 1) {
           await interaction.deferReply();
       const message3 = await interaction.channel.send('```사무실 시계를 제대로 맞췄다!```')
       message3.react('🔓');
