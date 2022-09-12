@@ -508,10 +508,14 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply('https://imgur.com/gjuO5nV.png');
     const message = await interaction.channel.send('```Thanks to 정다올```')
     message.react('❤️');
+    const message1 = await interaction.channel.send('```인섬니아의 모든 수익금은 (사)한국백혈병소아암협회에 기부됩니다.```')
+    message1.react('❤️');
   } else if (commandName === '노멀엔딩') {
     await interaction.reply({ files: ["https://imgur.com/DHMV63L.png"] })
     const message = await interaction.channel.send('```Thanks to 정다올```')
     message.react('❤️');
+    const message1 = await interaction.channel.send('```인섬니아의 모든 수익금은 (사)한국백혈병소아암협회에 기부됩니다.```')
+    message1.react('❤️');
   } else if (commandName === '허사장') {
     await interaction.reply({ files: ["https://i.imgur.com/LrTtNF1.jpg"] });
     const message = await interaction.channel.send('```사장님이 나를 쳐다본다.\n명패에 사장 허경영 이라고 쓰여있다.```');
