@@ -671,7 +671,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     }
 } else if (commandName === '시계리셋') {
     await interaction.deferReply();
-    tpttlrks * -99
+    tpttlrks - 99
   const message4 = await client.channels.cache.get('991916794308743198').send('```시계를 다시 돌릴수 있을것 같다!!```');
   message4.react('❤️');
   } else if (commandName === '전화기초기화') {
