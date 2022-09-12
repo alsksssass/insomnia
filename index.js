@@ -657,6 +657,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
       const message7 = await interaction.channel.send('```노래를 부르지 않으면 시간을 다시 맞출 수 없다!```')
       message7.react('🔒');
     }
+   
     if (tlrp11 == 0){
         interaction.reply('시계가 어디있지?')
     }
@@ -664,7 +665,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     await interaction.deferReply();
       console.log(number121)
       console.log(tpttlrks)
-      const message7 = await interaction.channel.send('```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.```')
+      const message7 = await interaction.channel.send('```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다. (불렀다면 무한으로 시도!)```')
       message7.react('🔒');
       tpttlrks ++
     }
