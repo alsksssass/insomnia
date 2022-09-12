@@ -661,7 +661,7 @@ vpdjvhs *= 0
 tlrp11 *= 0
     await interaction.reply('초기화됨')
   } else if (commandName === '타이머') {
-    		const number = interaction.options.getNumber('num');
+    		const number = interaction.options.getNumber('시간초');
 		let time = number
 		await interaction.reply(parseInt(time / 60)+"분"+(time % 60)+"초 타이머 시작")
 		//await interaction.reply('바뀜');
