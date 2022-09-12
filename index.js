@@ -675,7 +675,7 @@ tlrp11 *= 0
 				interaction.editReply({ content: "시간종료" });
 			  }	
 }, 1000
-	)}
+	)
   } else if (commandName === '야') {
     const message = await interaction.channel.send('You can react with custom emojis!');
     message.react('👍');
