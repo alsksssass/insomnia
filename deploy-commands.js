@@ -70,7 +70,6 @@ const commands = [
   new SlashCommandBuilder().setName('패턴').setDescription('패턴 잠금 풀기').addStringOption(option => option.setName('패턴').setDescription('번호적기')),
   new SlashCommandBuilder().setName('페어폰').setDescription('패턴용 페어폰 습득').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('시계발견').setDescription('시계발견').setDefaultMemberPermissions(0),
-  new SlashCommandBuilder().setName('타이머').setDescription('카운트다운').addStringOption(option => option.setName('num').setDescription('초기입')).setDefaultMemberPermissions(0),
   
 ]
   .map(command => command.toJSON());
