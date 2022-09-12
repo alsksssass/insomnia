@@ -550,6 +550,8 @@ client.on('interactionCreate', async interaction => {
       await interaction.deferReply();
       const message = await interaction.channel.send('```잠금이 해제되었다!```');
       message.react('🔓');
+      const message4 = await client.channels.cache.get('1001495326068314152').send('```패턴이 풀렸다!!!```');
+      message4.react('🔓');
     }
     if(vpdjvhs != 1) {
           await interaction.deferReply();
