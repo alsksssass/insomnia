@@ -145,6 +145,7 @@ client.on('interactionCreate', async interaction => {
     await message1.react('❤️');
   } else if (commandName === '휴대폰') {
     await interaction.deferReply();
+    wjsghkrkqt *= 0
     wjsghkrkqt += 1
     const message = await interaction.channel.send({ files: ['https://i.imgur.com/nQI3PI3.jpg'] });
     message.react('❤️');
