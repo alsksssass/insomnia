@@ -151,14 +151,14 @@ client.on('interactionCreate', async interaction => {
     await client.channels.cache.get('999886290008932433').send({ files: ['https://i.imgur.com/nQI3PI3.jpg'] });
     const message1 = await client.channels.cache.get('999886290008932433').send('```휴대폰\n어딘가로 전화할 수 있지 않을까?```');
     await message1.react('❤️');
-    const message2 =await client.channels.cache.get('991916794308743198').send('```/전화 명령어로 전화를 걸수 있다!!```');
+    const message2 =await client.channels.cache.get('991916794308743198').send('```/전화 ??????????? (-는 제외)명령어로 전화를 걸수 있다!!```');
     await message2.react('❤️');
   } else if (commandName === '시계발견') {
     tlrp11 += 1
     await interaction.reply('지금은 1시입니다. 시계도 못 보니?\n시계 뒷면을 볼 수 있을 것 같다.')
     const message = await interaction.channel.send('```입력에서 시간을 입력해 보자!!```');
     message.react('❤️');
-    const message2 =await client.channels.cache.get('991916794308743198').send('```/시간 명령어로 시간을 바꿀수 있다!!```');
+    const message2 =await client.channels.cache.get('991916794308743198').send('```/시간 ???? (숫자만4자리) 명령어로 시간을 바꿀수 있다!!```');
     await message2.react('❤️');
   } else if (commandName === '의자') {
     await interaction.deferReply();
@@ -299,7 +299,7 @@ client.on('interactionCreate', async interaction => {
     await message9.react('❤️');
     const message10 = await client.channels.cache.get('999908072879292477').send('```오프리숀, 회사에서 널 힘들 게 하는 게 뭐야?\n\n지금 그 상황을 어떻게 해결하고 싶어? ```');////10
     await message10.react('❤️');
-    const message11 = await client.channels.cache.get('991916794308743198').send('```/ 입력후 비번 입력(입력할 비번말고) 엔터 후 비번입력(시도하고싶은 비번) 후 엔터 다시한번```');
+    const message11 = await client.channels.cache.get('991916794308743198').send('```/비번 ????  (숫자)입력\n 잘모르겠다면 /비번 비번:9999 를 그대로 복사해서 숫자만 바꾸고 엔터```');
   } else if (interaction.commandName === '올청소') {
     await interaction.reply('삭제(Max500)');
     const tkrwp = await client.channels.cache.get('1003991219275321364')
@@ -496,6 +496,10 @@ client.on('interactionCreate', async interaction => {
       .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
       .catch(console.error);
     ///오프리숀
+    wjsghkrkqt *= 0
+    vpdjvhs *= 0
+    tlrp11 *= 0
+    tpttlrks *=0
   } else if (commandName === '청소') {
     const number = interaction.options.getNumber('숫자');
     await interaction.reply(number + tkrwpehla);
@@ -504,11 +508,13 @@ client.on('interactionCreate', async interaction => {
       .catch(console.error);
   } else if (commandName === '진엔딩') {
     await interaction.reply('https://imgur.com/gjuO5nV.png');
-    const message = await interaction.channel.send('```Thanks to 정다올```')
+    await interaction.channel.send('```Thanks to 정다올```')
+    const message = await interaction.channel.send('```인섬니아의 모든 수익금은 기부됩니다. 감사합니다```')
     message.react('❤️');
   } else if (commandName === '노멀엔딩') {
     await interaction.reply({ files: ["https://imgur.com/DHMV63L.png"] })
-    const message = await interaction.channel.send('```Thanks to 정다올```')
+    await interaction.channel.send('```Thanks to 정다올```')
+    const message = await interaction.channel.send('```인섬니아의 모든 수익금은 기부됩니다. 감사합니다```')
     message.react('❤️');
   } else if (commandName === '허사장') {
     await interaction.reply({ files: ["https://i.imgur.com/LrTtNF1.jpg"] });
@@ -569,7 +575,8 @@ client.on('interactionCreate', async interaction => {
 else if (commandName === '페어폰'){
 vpdjvhs += 1
 await interaction.reply('```두둥!!```')
-const message2 = await client.channels.cache.get('991916794308743198').send({ files: ['https://i.imgur.com/T93cWmJ.png'] });
+await client.channels.cache.get('991916794308743198').send({ files: ['https://i.imgur.com/T93cWmJ.png'] });
+const message2 = await client.channels.cache.get('991916794308743198').send(```/패턴 ????????? 로풀수있다. 숫자이며 위의 사진참고!```);
       message2.react('📱');
 
 const message1 = await interaction.channel.send('```페어의 폰을 찾았다!```');
@@ -656,6 +663,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     wjsghkrkqt *= 0
 vpdjvhs *= 0
 tlrp11 *= 0
+tpttlrks *=0
     await interaction.reply('초기화됨')
   } else if (commandName === '야') {
     const message = await interaction.channel.send('You can react with custom emojis!');
