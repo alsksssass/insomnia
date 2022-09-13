@@ -621,34 +621,34 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     let dhdfn = 116
     let dhvmfl = 209
     if (number121 == dhdfn && tpttlrks <= 0 && tlrp11 == 1) {
-          await interaction.deferReply();
-      const message1 = await interaction.channel.send('```생활관 시계를 제대로 맞췄다!```')
+
+      const message1 = await interaction.reply('```생활관 시계를 제대로 맞췄다!```')
       message1.react('🔓');
       const message2 = await client.channels.cache.get('1001495384092332162').send('```시간을 제대로 맞추었다!!```');
       message2.react('🔓');
     }
     if (number121 == dhvmfl && tpttlrks <= 0 && tlrp11 == 1) {
-          await interaction.deferReply();
-      const message3 = await interaction.channel.send('```사무실 시계를 제대로 맞췄다!```')
+
+      const message3 = await interaction.reply('```사무실 시계를 제대로 맞췄다!```')
       message3.react('🔓');
       const message4 = await client.channels.cache.get('1001495463792492635').send('```시간을 제대로 맞추었다!!```');
       message4.react('🔓');
     }
     if (tpttlrks >= 1) {
-          await interaction.deferReply();
+
       console.log(number121)
       console.log(tpttlrks)
-      const message7 = await interaction.channel.send('```노래를 부르지 않으면 시간을 다시 맞출 수 없다!```')
+      const message7 = await interaction.reply('```노래를 부르지 않으면 시간을 다시 맞출 수 없다!```')
       message7.react('🔒');
     }
     if (tlrp11 == 0){
         interaction.reply('시계가 어디있지?')
     }
     else {
-    await interaction.deferReply();
+    
       console.log(number121)
       console.log(tpttlrks)
-      const message7 = await interaction.channel.send('```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.```')
+      const message7 = await interaction.reply('```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.```')
       message7.react('🔒');
       tpttlrks += 1
     }
