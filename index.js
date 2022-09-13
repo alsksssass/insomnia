@@ -643,7 +643,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     }
     else {
       tpttlrks += 1
-      const message7 = await interaction.reply({ content: '```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.```', fetchReply: true });
+      const message7 = await interaction.reply({ content: '```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.\n\n노래를 불렀다면 계속 시도가 가능하다!```', fetchReply: true });
       message7.react('🔒');
     }
 } else if (commandName === '시계리셋') {
