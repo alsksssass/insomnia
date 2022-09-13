@@ -620,14 +620,14 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     const number121 = interaction.options.getNumber('시간');
     let dhdfn = 116
     let dhvmfl = 209
-    if (number121 == dhdfn && tpttlrks == 0 && tlrp11 == 1) {
+    if (number121 == dhdfn && tpttlrks <= 0 && tlrp11 == 1) {
           await interaction.deferReply();
       const message1 = await interaction.channel.send('```생활관 시계를 제대로 맞췄다!```')
       message1.react('🔓');
       const message2 = await client.channels.cache.get('1001495384092332162').send('```시간을 제대로 맞추었다!!```');
       message2.react('🔓');
     }
-    if (number121 == dhvmfl && tpttlrks == 0 && tlrp11 == 1) {
+    if (number121 == dhvmfl && tpttlrks <= 0 && tlrp11 == 1) {
           await interaction.deferReply();
       const message3 = await interaction.channel.send('```사무실 시계를 제대로 맞췄다!```')
       message3.react('🔓');
@@ -653,8 +653,8 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
       tpttlrks += 1
     }
 } else if (commandName === '시계리셋') {
-      await interaction.deferReply();
-    tpttlrks *= 0
+      await interaction.reply('```시계를 다시 돌릴수 있게 되었다.```')
+    tpttlrks -= 99
   const message4 = await client.channels.cache.get('991916794308743198').send('```시계를 다시 돌릴수 있을것 같다!!```');
   message4.react('❤️');
   } else if (commandName === '전화기초기화') {
