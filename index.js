@@ -622,14 +622,14 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     let dhvmfl = 209
     if (number121 == dhdfn && tpttlrks <= 0 && tlrp11 == 1) {
 
-      const message1 = await interaction.reply('```생활관 시계를 제대로 맞췄다!```')
+      const message1 = await interaction.reply({ content: '```생활관 시계를 제대로 맞췄다!```', fetchReply: true })
       message1.react('🔓');
       const message2 = await client.channels.cache.get('1001495384092332162').send('```시간을 제대로 맞추었다!!```');
       message2.react('🔓');
     }
     if (number121 == dhvmfl && tpttlrks <= 0 && tlrp11 == 1) {
 
-      const message3 = await interaction.reply('```사무실 시계를 제대로 맞췄다!```')
+      const message3 = await interaction.reply({ content: '```사무실 시계를 제대로 맞췄다!```', fetchReply: true })
       message3.react('🔓');
       const message4 = await client.channels.cache.get('1001495463792492635').send('```시간을 제대로 맞추었다!!```');
       message4.react('🔓');
@@ -638,7 +638,7 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
 
       console.log(number121)
       console.log(tpttlrks)
-      const message7 = await interaction.reply('```노래를 부르지 않으면 시간을 다시 맞출 수 없다!```')
+      const message7 = await interaction.reply({ content: '```노래를 부르지 않으면 시간을 다시 맞출 수 없다!```', fetchReply: true })
       message7.react('🔒');
     }
     if (tlrp11 == 0){
@@ -646,11 +646,11 @@ const message1 = await interaction.channel.send('```페어의 폰을 찾았다!`
     }
     else {
       tpttlrks += 1
-      const message7 = await interaction.reply('```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.```')
+      const message7 = await interaction.reply({ content: '```잘못된 시간이다 ㅠㅠ 얼른 노래를 불러야 시간을 다시 맞출 수 있다.```', fetchReply: true });
       message7.react('🔒');
     }
 } else if (commandName === '시계리셋') {
-      await interaction.reply('```시계를 다시 돌릴수 있게 되었다.```')
+      await interaction.reply({ content: '```시계를 다시 돌릴수 있게 되었다.```', fetchReply: true });
     tpttlrks -= 99
   const message4 = await client.channels.cache.get('991916794308743198').send('```시계를 다시 돌릴수 있을것 같다!!```');
   message4.react('❤️');
