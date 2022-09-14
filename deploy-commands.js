@@ -72,7 +72,7 @@ const commands = [
   new SlashCommandBuilder().setName('페어폰').setDescription('패턴용 페어폰 습득').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('시계발견').setDescription('시계발견').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('비번초기화').setDescription('비번초기화').setDefaultMemberPermissions(0),
-   new SlashCommandBuilder().setName('타이머').setDescription('초넣기').addNumberOption(option => option.setName('num').setDescription('시간을 맞춰보자')),
+   new SlashCommandBuilder().setName('타이머').setDescription('단위 분').addNumberOption(option => option.setName('num').setDescription('분')),
   
 ]
   .map(command => command.toJSON());
