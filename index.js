@@ -670,11 +670,6 @@ tpttlrks *=0
     const number = interaction.options.getNumber('num');
     const timecc = number
     await interaction.reply(parseInt(timecc / 60)+"분"+(timecc % 60)+"초 타이머 시작")
-    console.log(musicChannelId)
-    console.log(guildId)
-    //await interaction.reply('바뀜');
-    //await wait(2000);
-    //await interaction.editReply({ content: "이건어때" });
     var timer = setInterval(() => {
         timecc --
         interaction.editReply({ content: parseInt(timecc / 60)+"분"+(timecc % 60)+"초남음" });
