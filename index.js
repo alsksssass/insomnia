@@ -577,12 +577,11 @@ client.on('interactionCreate', async interaction => {
 else if (commandName === '페어폰'){
 vpdjvhs *= 0    
 vpdjvhs += 1
-await interaction.reply('```두둥!!```')
-await client.channels.cache.get('991916794308743198').send({ files: ['https://i.imgur.com/T93cWmJ.png'] });
-const message2 = await client.channels.cache.get('991916794308743198').send(```/패턴 ????????? 로풀수있다. 숫자이며 위의 사진참고!```);
+    await interaction.reply('```두둥!!```')
+    await client.channels.cache.get('991916794308743198').send({ files: ['https://i.imgur.com/T93cWmJ.png'] });
+    const message2 = await client.channels.cache.get('991916794308743198').send('```/패턴 ????????? 로풀수있다. 숫자이며 위의 사진참고!```');
       message2.react('📱');
-
-const message1 = await interaction.channel.send('```페어의 폰을 찾았다!```');
+    const message1 = await interaction.channel.send('```페어의 폰을 찾았다!```');
       message1.react('📱');
 
   }   else if (commandName === '비번') {
