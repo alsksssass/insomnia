@@ -666,9 +666,24 @@ vpdjvhs *= 0
 tlrp11 *= 0
 tpttlrks *=0
     await interaction.reply('초기화됨')
-  } else if (commandName === '야') {
-    const message = await interaction.channel.send('You can react with custom emojis!');
-    message.react('👍');
+  } else if (commandName === '타이머') {
+    const number = interaction.options.getNumber('num');
+    const timecc = number
+    await interaction.reply(parseInt(timecc / 60)+"분"+(timecc % 60)+"초 타이머 시작")
+    console.log(musicChannelId)
+    console.log(guildId)
+    //await interaction.reply('바뀜');
+    //await wait(2000);
+    //await interaction.editReply({ content: "이건어때" });
+    var timer = setInterval(() => {
+        timecc --
+        interaction.editReply({ content: parseInt(timecc / 60)+"분"+(timecc % 60)+"초남음" });
+        if (timecc === 0) {
+            clearInterval(timer);
+            interaction.editReply({ content: "시간종료" });
+          }	
+}, 1000
+)
   } else if (commandName === '야') {
     const message = await interaction.channel.send('You can react with custom emojis!');
     message.react('👍');
