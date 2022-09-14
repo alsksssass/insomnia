@@ -668,10 +668,10 @@ tpttlrks *=0
     await interaction.reply('초기화됨')
   } else if (commandName === '타이머') {
     const number = interaction.options.getNumber('num');
-    let timecc = number
+    let timecc = number*60
     await interaction.reply(parseInt(timecc / 60)+"분"+(timecc % 60)+"초 타이머 시작")
     var timer = setInterval(() => {
-        timecc --
+        timecc -= 1
         interaction.editReply({ content: parseInt(timecc / 60)+"분"+(timecc % 60)+"초남음" });
         if (timecc === 0) {
             clearInterval(timer);
