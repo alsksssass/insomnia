@@ -155,6 +155,7 @@ client.on('interactionCreate', async interaction => {
     const message2 =await client.channels.cache.get('991916794308743198').send('```/전화 ??????????? (-는 제외)명령어로 전화를 걸수 있다!!```');
     await message2.react('❤️');
   } else if (commandName === '시계발견') {
+    tlrp11 *= 0
     tlrp11 += 1
     await interaction.reply('지금은 1시입니다. 시계도 못 보니?\n시계 뒷면을 볼 수 있을 것 같다.')
     const message = await interaction.channel.send('```입력에서 시간을 입력해 보자!!```');
@@ -560,12 +561,12 @@ client.on('interactionCreate', async interaction => {
       const message4 = await client.channels.cache.get('1001495326068314152').send('```패턴이 풀렸다!!!```');
       message4.react('🔓');
     }
-    if(vpdjvhs != 1) {
+    else if(vpdjvhs != 1) {
           await interaction.deferReply();
       const message1 = await interaction.channel.send('```폰도 없이 어떻게 패턴을 푸나?```');
       message1.react('🔒');
     }
-    if(vpdjvhs == 1 && string != 123654789) {
+    else if(vpdjvhs == 1 && string != 123654789) {
           await interaction.deferReply();
       const message1 = await interaction.channel.send('```패턴 오류!```');
       message1.react('🔒');
