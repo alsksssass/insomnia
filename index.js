@@ -574,6 +574,7 @@ client.on('interactionCreate', async interaction => {
 }
 
 else if (commandName === '페어폰'){
+vpdjvhs *= 0    
 vpdjvhs += 1
 await interaction.reply('```두둥!!```')
 await client.channels.cache.get('991916794308743198').send({ files: ['https://i.imgur.com/T93cWmJ.png'] });
