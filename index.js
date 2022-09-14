@@ -669,13 +669,13 @@ tpttlrks *=0
   } else if (commandName === '타이머') {
     const number = interaction.options.getNumber('num');
     let timecc = number*60
-    await interaction.reply("⏳"+parseInt(timecc / 60)+"분"+(timecc % 60)+"초 타이머 시작")
+    await interaction.reply("⏳"+parseInt((time / 60)/60)+"시간"+parseInt((time / 60)%60)+"분"+(time % 60)+"초 타이머 시작")
     var timer = setInterval(() => {
         timecc -= 1
-        interaction.editReply({ content: "⏳"+parseInt(timecc / 60)+"분"+(timecc % 60)+"초남음" });
+        interaction.editReply({ content: "⏳"+parseInt((time / 60)/60)+"시간"+parseInt((time / 60)%60)+"분"+(time % 60)+"초남음" });
         if (timecc === 0) {
             clearInterval(timer);
-            interaction.editReply({ content: "⌛"+"시간종료" });
+            interaction.editReply({ content: "⌛"+"시간종료!" });
           }	
 }, 1000
 )
