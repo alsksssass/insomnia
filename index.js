@@ -716,7 +716,7 @@ if(message.content.startsWith(`!타이머`)) { // If the message content is "!pi
     let timecc = args[1]*60
   const tic = await message.reply("⏳"+parseInt((timecc / 60)/60)+"시간"+parseInt((timecc / 60)%60)+"분"+(timecc % 60)+"초 타이머 시작")
   var timer = setInterval(() => {
-      timecc --
+      timecc -= 5
       tic.edit({ content: "⏳"+parseInt((timecc / 60)/60)+"시간"+parseInt((timecc / 60)%60)+"분"+(timecc % 60)+"초남음" })
       .catch(console.warn = () => {});
       
@@ -725,7 +725,7 @@ if(message.content.startsWith(`!타이머`)) { // If the message content is "!pi
           tic.edit({ content: "⌛"+"@everyone 시간종료!" })
           .catch(console.warn = () => {});
           }	
-}, 1000)
+}, 5000)
 }
 });
 
