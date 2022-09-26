@@ -686,9 +686,9 @@ tpttlrks *=0
           }	
 }, 1000
 )
-  } else if (commandName === '야') {
-    const message = await interaction.channel.send('You can react with custom emojis!');
-    message.react('👍');
+  } else if (commandName === '로그') {
+    console.log(calling)
+    console.log(discalling)
   } else if (commandName === '야') {
     const message = await interaction.channel.send('You can react with custom emojis!');
     message.react('👍');
@@ -735,8 +735,8 @@ if(message.content.startsWith(`!타이머`)) { // If the message content is "!pi
 
 if(calling == 1) {
   const connection = joinVoiceChannel({
-    channelId: message.member.voice.channelId,
-    guildId: message.guildId,
+    channelId: '981144982201171992',
+    guildId: '981144982201171988',
     adapterCreator: message.guild.voiceAdapterCreator
     
 })
@@ -760,8 +760,8 @@ calling --
 }
 if(discalling == 1) {
   const connection = joinVoiceChannel({
-    channelId: message.member.voice.channelId,
-    guildId: message.guildId,
+    channelId: '981144982201171992',
+    guildId: '981144982201171988',
     adapterCreator: message.guild.voiceAdapterCreator
     
 })
