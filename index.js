@@ -26,6 +26,8 @@ voxjs = '123654789'
 vpdjvhs = 0
 tlrp11 = 0
 
+var calling = 0
+var discalling = 0
 
 
 /////
@@ -538,6 +540,7 @@ client.on('interactionCreate', async interaction => {
     const string = interaction.options.getString('다이얼');
     if (string == wjdekq && wjsghkrkqt == 1) {
       await interaction.deferReply();
+      discalling += 1
       const message = await interaction.channel.send(' ```전화가 걸렸다 !! 뚜르르르르 뚜르르르르```');
       message.react('📲');
     }
@@ -548,6 +551,7 @@ client.on('interactionCreate', async interaction => {
     }
     if(wjsghkrkqt == 1 && string != wjdekq) {
           await interaction.deferReply();
+          discalling += 1
       const message1 = await interaction.channel.send('```없는 번호입니다. 다시 확인하시고 걸어주시기 바랍니다```');
       message1.react('📵');
     }
@@ -727,6 +731,57 @@ if(message.content.startsWith(`!타이머`)) { // If the message content is "!pi
           .catch(console.warn = () => {});
           }	
 }, 1000)
+}
+
+if(calling == 1) {
+  const connection = joinVoiceChannel({
+    channelId: message.member.voice.channelId,
+    guildId: message.guildId,
+    adapterCreator: message.guild.voiceAdapterCreator
+    
+})
+
+
+const player = createAudioPlayer()
+const resource = createAudioResource('./music/1234.mp3')
+
+
+player.play(resource, {seek: 0, volume: 1.0})
+connection.subscribe(player);
+
+player.on(AudioPlayerStatus.Idle, () => {
+  connection.destroy();
+});
+
+calling --
+
+    
+  
+}
+if(discalling == 1) {
+  const connection = joinVoiceChannel({
+    channelId: message.member.voice.channelId,
+    guildId: message.guildId,
+    adapterCreator: message.guild.voiceAdapterCreator
+    
+})
+
+
+const player = createAudioPlayer()
+const resource = createAudioResource('./music/123.mp3')
+
+
+player.play(resource, {seek: 0, volume: 1.0})
+connection.subscribe(player);
+
+player.on(AudioPlayerStatus.Idle, () => {
+  connection.destroy();
+});
+
+discalling --
+
+    
+  
 }
 });
 
